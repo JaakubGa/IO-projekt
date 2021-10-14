@@ -29,3 +29,5 @@
 4. 
 
 
+https://abclinuksa.pl/books/markdown_html/syntax/tables.html
+https://www.bip.tarr.org.pl/wp-content/uploads/2014/01/Załącznik-do-SIWZ-nr-8-Specyfikacja-techniczno-funkcjonalna-platformy.pdf
