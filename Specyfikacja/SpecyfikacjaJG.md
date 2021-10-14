@@ -15,9 +15,10 @@ Celem jest zaprojektowanie koszyka oraz dodawania przedmitów do niego w aplikac
 
 ### 3. Defnicje oraz słownik pojęć
 
--Klient - osoba korzystające z naszego systemu.
--Koszyk - miejsce zebranych produktów, którymi zainteresował się klient.
--Sprzedawca - osoba która wystawia i sprzedaje/wypożycza swoje narzędzia.
+    -  Klient – osoba, która korzysta z systemu, kupuje/wypożycza narzędzia.
+	  - Koszyk – miejsce, w którym klient przechowuje interesujace go rzeczy
+    firmy.
+    - Sprzedawca - osoba która wystawia i sprzedaje/wypożycza swoje narzędzia
 
 ### 4. Wymagania funkcjonalne
 
