@@ -6,12 +6,12 @@ Celem jest zaprojektowanie koszyka oraz dodawania przedmitów do niego w aplikac
 ### 2.  Użyta technologia oraz środowisko pracy  
     
   
-| Technologia            | Środowisko        |
-| ------------------------------------------:|
-| 1.C#                   | VisualStudioCode  |
-| 2.Baza Danych MySQL 5  | SSMS              |
-| 2.Markdown             | VScode            |
-| 3.Dostęp do bazy danych| SSMS              |
+ | Technologia        | Środowisko   |
+| ------------- |:-------------------:|
+| 1. C#   |VisualStudioCode |
+| 2.  Baza Danych  | SSMS        |
+| 3.Markdown|VScode        |
+
 
 ### 3. Defnicje oraz słownik pojęć
 
