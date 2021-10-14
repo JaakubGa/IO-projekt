@@ -1,13 +1,14 @@
 # Specyfikacja dot. logowania/rejestracji użytkownika w aplikacji _Wypożyczalnia elektronarzędzi_
 
 
-1. Ogólny opis wymagań.  
-    1.1 Celem projektu jest zaprojektowanie i wdrożenie platformy do obsługi rejestracji oraz logowania na stronie __wypożyczalni elektronarzędzi__
+### 1. Ogólny opis wymagań.  
+    1.1 Celem projektu jest zaprojektowanie i wdrożenie platformy do obsługi rejestracji oraz logowania na stronie __wypożyczalni elektronarzędzi__.
+    Przedstawia wynik fazy analizy i przedstawia specyfikację wymagań dostarczoną przez klienta w dogodny i przejrzysty sposób. 
 
 
 
 
-2. Użyta technologia oraz środowisko pracy  
+### 2.  Użyta technologia oraz środowisko pracy  
     
   
   | Technologia        | Środowisko   |
@@ -19,15 +20,47 @@
 |   dostęp do bazy danych|     SglMenagmentServer   |
 
 
+### 3.  Definicja i słownik pojęc.  
+    -  Klient – osoba, która korzysta z systemu.
+	  - System – program, który ma za zadanie ułatwić pracę
+    firmy.
+    - Sprzedawca - osoba która wystawia i sprzedaje/wypożycza swoje narzędzia
+    
 
 
 
 
-3. Diagram przypadków użycia. 
-![](2021-10-13-20-46-28.png)
+  
 
-4. 
+### 4.  Diagram przypadków użycia. 
+![](2021-10-13-20-46-28.png)  
+
+   ### 4.1 Wnioski na podstawie diagramu przypadków użycia.  
+     Na diagramie widać jak ma odbywać się komunikacja między __klientem__ a __sprzedawcą__.
+     Klient korzysta z funkcji opisanych jako _Wypożyczanie sprzętu_ a także _Logowanie/rejestracja_ natomiast nie ma dostępu do _Wystawiania ogłoszeń_.
+
+### 5. Wymagania funkcjonalne 
+
+| ID        | Identyfikator wymagania                                                                   |
+|-----------|-------------------------------------------------------------------------------------------|
+| Nazwa     | Tworzenia konta                                                                           |
+| Priorytet | Wysoki                                                                                    |
+| Rola      | Wszyscy                                                                                   |
+| Opis      | Każdy użytkownik (klient/sprzedawca) może utworzyć  konto dodając tym samym wpis do bazy  |   
+
+  
+  | ID        | Identyfikator wymagania                                                                                                                                                        |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nazwa     | Zarządzanie kontami                                                                                                                                                            |
+| Priorytet | Wysoki                                                                                                                                                                         |
+| Rola      | Wszyscy                                                                                                                                                                        |
+| Opis      | Każdy sprzedawca ma możliwość przeglądania swoich ogłoszeń oraz informacji dotyczących kont.  Każdy klient ma możliwość przeglądania swoich zamówień oraz informacji o koncie. |  
+  
+    
+    
 
 
-https://abclinuksa.pl/books/markdown_html/syntax/tables.html
-https://www.bip.tarr.org.pl/wp-content/uploads/2014/01/Załącznik-do-SIWZ-nr-8-Specyfikacja-techniczno-funkcjonalna-platformy.pdf
+
+
+### 6.  Wymagania niefunkcjonalne 
+    5.1 System powinen łączyć się z zewnętrzną bazą danych (baza użtykowników oraz narzędzi)
