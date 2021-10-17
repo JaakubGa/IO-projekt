@@ -33,7 +33,7 @@
   
 
 ### 4.  Diagram przypadków użycia. 
-![](2021-10-13-20-46-28.png)  
+![](https://raw.githubusercontent.com/JaakubGa/IO-projekt/testy/Specyfikacja/2021-10-13-20-46-28.png)
 
    ### 4.1 Wnioski na podstawie diagramu przypadków użycia.  
      Na diagramie widać jak ma odbywać się komunikacja między __klientem__ a __sprzedawcą__.
