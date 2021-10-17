@@ -56,11 +56,15 @@
 | Rola      | Wszyscy                                                                                                                                                                        |
 | Opis      | Każdy sprzedawca ma możliwość przeglądania swoich ogłoszeń oraz informacji dotyczących kont.  Każdy klient ma możliwość przeglądania swoich zamówień oraz informacji o koncie. |  
   
+      
+
+### 6. Szkic interfejsu  
+     
+
     
-    
 
 
 
 
-### 6.  Wymagania niefunkcjonalne 
+### 7.  Wymagania niefunkcjonalne 
     5.1 System powinen łączyć się z zewnętrzną bazą danych (baza użtykowników oraz narzędzi)
