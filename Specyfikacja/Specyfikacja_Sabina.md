@@ -29,12 +29,10 @@
 
   
 
-### 4.  Diagram przypadków użycia. 
-![](2021-10-13-20-46-28.png)  
-
-   ### 4.1 Wnioski na podstawie diagramu przypadków użycia.  
-     Na diagramie widać jak ma odbywać się komunikacja między __klientem__ a __sprzedawcą__.
-     Klient korzysta z funkcji opisanych jako _Wypożyczanie sprzętu_ a także _Logowanie/rejestracja_ natomiast nie ma dostępu do _Wystawiania ogłoszeń_.
+### 4.  Diagram. 
+![alt text](https://github.com/JaakubGa/IO-projekt/blob/testy/Specyfikacja/diagram_sabina.png)
+   ### 4.1 Wnioski na podstawie diagramu.  
+     Na diagramie widać wstępny wygląd stron.
 
 ### 5. Wymagania funkcjonalne 
 
