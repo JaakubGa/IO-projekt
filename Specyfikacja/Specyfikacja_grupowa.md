@@ -2,7 +2,7 @@
 
 
 ### 1. Ogólny opis wymagań.  
-    ###1.1 Celem projektu jest zaprojektowanie aplikacji "Wypożyczalnia elektronarzędzi". Wchodzi w nią: wdrożenie platformy do obsługi rejestracji oraz logowania na stronie,
+    1.1 Celem projektu jest zaprojektowanie aplikacji "Wypożyczalnia elektronarzędzi". Wchodzi w nią: wdrożenie platformy do obsługi rejestracji oraz logowania na stronie,
     zaprojektowanie panelu konta użytkownika oraz jego zamówień i jego ogłoszeń(dane wyświetlane będą pobierane z bazy danych i wyświetlanie na stronie),
     zaprojektowanie koszyka oraz dodawania przedmitów do niego, zaprojektowanie strony wyszukiwarki i strona przedmiotu.
 
@@ -112,4 +112,4 @@ firmy.
 
 
 ### 6.  Wymagania niefunkcjonalne 
-    ###6.1 System powinen łączyć się z zewnętrzną bazą danych (baza użtykowników oraz narzędzi)
+    6.1 System powinen łączyć się z zewnętrzną bazą danych (baza użtykowników oraz narzędzi)
