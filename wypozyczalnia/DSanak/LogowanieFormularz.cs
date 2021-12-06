@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wypozyczalnia
+namespace wypozyczalnia.DSanak
 {
-    public partial class Form1 : Form
+    public partial class LogowanieFormularz : Form
     {
-        public Form1()
+        public LogowanieFormularz()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            public int MyProperty { get; set; }
-
-    }
     }
 }
