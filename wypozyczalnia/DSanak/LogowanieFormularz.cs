@@ -16,15 +16,15 @@ namespace wypozyczalnia.DSanak
         {
             InitializeComponent();
         }
-/*
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (usernametxt.Text=="test" && userpasswordtxt.Text=="testhaslo")
+            if (usernametxt.Text == "test" && userpasswordtxt.Text == "testhaslo")
             {
                 Form ekran2 = new Form();
                 ekran2.Show();
                 this.Hide();
             }
-        }*/
+        }
     }
 }
