@@ -8,6 +8,8 @@ namespace wypozyczalnia.DSanak
 {
     public class Logowanie
     {
-        public int MyProperty = 6;
+        
+
+
     }
 }
