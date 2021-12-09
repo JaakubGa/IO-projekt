@@ -96,5 +96,8 @@
   <ItemGroup>
     <None Include="DSanak\grafiki\Logowanie\user_log.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Gasidlo\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
