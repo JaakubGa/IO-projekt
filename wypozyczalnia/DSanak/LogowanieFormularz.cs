@@ -21,7 +21,7 @@ namespace wypozyczalnia.DSanak
         {
             if (usernametxt.Text == "test" && userpasswordtxt.Text == "testhaslo")
             {
-                Form ekran2 = new Form();
+                Form ekran2 = new DSanak.Rejestracja.Rejestracja();
                 ekran2.Show();
                 this.Hide();
             }
