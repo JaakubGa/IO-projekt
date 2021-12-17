@@ -53,6 +53,13 @@
     <Compile Include="DSanak\LogowanieFormularz.Designer.cs">
       <DependentUpon>LogowanieFormularz.cs</DependentUpon>
     </Compile>
+    <Compile Include="DSanak\Rejestracja\Rejestracja.cs" />
+    <Compile Include="DSanak\Rejestracja\RejestracjaFormularz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSanak\Rejestracja\RejestracjaFormularz.Designer.cs">
+      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DSanak\LogowanieFormularz.resx">
       <DependentUpon>LogowanieFormularz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSanak\Rejestracja\RejestracjaFormularz.resx">
+      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
