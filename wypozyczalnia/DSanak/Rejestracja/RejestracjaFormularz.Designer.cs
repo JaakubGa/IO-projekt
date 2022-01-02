@@ -32,32 +32,33 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.number_txt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.street_txt = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.city_txt = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.email_txt = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.password_txt = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.login_txt = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lastname_txt = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.usernametxt = new System.Windows.Forms.TextBox();
+            this.firstname_txt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,31 +67,32 @@
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.AutoSize = true;
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.number_txt);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.street_txt);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.city_txt);
             this.groupBox1.Controls.Add(this.panel7);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.email_txt);
             this.groupBox1.Controls.Add(this.panel8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.password_txt);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.login_txt);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.lastname_txt);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.usernametxt);
+            this.groupBox1.Controls.Add(this.firstname_txt);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label1);
@@ -136,16 +138,16 @@
             this.label8.Text = "NUMBER";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox4
+            // number_txt
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox4.Location = new System.Drawing.Point(660, 299);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(204, 31);
-            this.textBox4.TabIndex = 68;
+            this.number_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.number_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.number_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.number_txt.Location = new System.Drawing.Point(660, 299);
+            this.number_txt.Multiline = true;
+            this.number_txt.Name = "number_txt";
+            this.number_txt.Size = new System.Drawing.Size(204, 31);
+            this.number_txt.TabIndex = 68;
             // 
             // panel5
             // 
@@ -167,16 +169,16 @@
             this.label9.Text = "STREET";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox5
+            // street_txt
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox5.Location = new System.Drawing.Point(660, 240);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(204, 31);
-            this.textBox5.TabIndex = 65;
+            this.street_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.street_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.street_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.street_txt.Location = new System.Drawing.Point(660, 240);
+            this.street_txt.Multiline = true;
+            this.street_txt.Name = "street_txt";
+            this.street_txt.Size = new System.Drawing.Size(204, 31);
+            this.street_txt.TabIndex = 65;
             // 
             // panel6
             // 
@@ -198,16 +200,16 @@
             this.label10.Text = "CITY";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // city_txt
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox6.Location = new System.Drawing.Point(660, 177);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(204, 31);
-            this.textBox6.TabIndex = 62;
+            this.city_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.city_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.city_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.city_txt.Location = new System.Drawing.Point(660, 177);
+            this.city_txt.Multiline = true;
+            this.city_txt.Name = "city_txt";
+            this.city_txt.Size = new System.Drawing.Size(204, 31);
+            this.city_txt.TabIndex = 62;
             // 
             // panel7
             // 
@@ -229,16 +231,16 @@
             this.label11.Text = "E-MAIL";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox7
+            // email_txt
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox7.Location = new System.Drawing.Point(660, 120);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(204, 31);
-            this.textBox7.TabIndex = 59;
+            this.email_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.email_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.email_txt.Location = new System.Drawing.Point(660, 120);
+            this.email_txt.Multiline = true;
+            this.email_txt.Name = "email_txt";
+            this.email_txt.Size = new System.Drawing.Size(204, 31);
+            this.email_txt.TabIndex = 59;
             // 
             // panel8
             // 
@@ -260,16 +262,16 @@
             this.label7.Text = "PASSWORD";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // password_txt
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox3.Location = new System.Drawing.Point(199, 299);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 31);
-            this.textBox3.TabIndex = 56;
+            this.password_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.password_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.password_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.password_txt.Location = new System.Drawing.Point(199, 299);
+            this.password_txt.Multiline = true;
+            this.password_txt.Name = "password_txt";
+            this.password_txt.Size = new System.Drawing.Size(204, 31);
+            this.password_txt.TabIndex = 56;
             // 
             // panel4
             // 
@@ -291,16 +293,16 @@
             this.label6.Text = "USER NAME";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // login_txt
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox2.Location = new System.Drawing.Point(199, 240);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 31);
-            this.textBox2.TabIndex = 53;
+            this.login_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.login_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.login_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.login_txt.Location = new System.Drawing.Point(199, 240);
+            this.login_txt.Multiline = true;
+            this.login_txt.Name = "login_txt";
+            this.login_txt.Size = new System.Drawing.Size(204, 31);
+            this.login_txt.TabIndex = 53;
             // 
             // panel3
             // 
@@ -322,16 +324,16 @@
             this.label5.Text = "LAST NAME";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // lastname_txt
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.textBox1.Location = new System.Drawing.Point(199, 177);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 31);
-            this.textBox1.TabIndex = 50;
+            this.lastname_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lastname_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lastname_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.lastname_txt.Location = new System.Drawing.Point(199, 177);
+            this.lastname_txt.Multiline = true;
+            this.lastname_txt.Name = "lastname_txt";
+            this.lastname_txt.Size = new System.Drawing.Size(204, 31);
+            this.lastname_txt.TabIndex = 50;
             // 
             // panel2
             // 
@@ -353,16 +355,16 @@
             this.label4.Text = "FIRST NAME";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // usernametxt
+            // firstname_txt
             // 
-            this.usernametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.usernametxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.usernametxt.Location = new System.Drawing.Point(199, 120);
-            this.usernametxt.Multiline = true;
-            this.usernametxt.Name = "usernametxt";
-            this.usernametxt.Size = new System.Drawing.Size(204, 31);
-            this.usernametxt.TabIndex = 47;
+            this.firstname_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.firstname_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.firstname_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.firstname_txt.Location = new System.Drawing.Point(199, 120);
+            this.firstname_txt.Multiline = true;
+            this.firstname_txt.Name = "firstname_txt";
+            this.firstname_txt.Size = new System.Drawing.Size(204, 31);
+            this.firstname_txt.TabIndex = 47;
             // 
             // button1
             // 
@@ -400,6 +402,20 @@
             this.label1.Text = "Create account";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(347, 385);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(236, 35);
+            this.button4.TabIndex = 72;
+            this.button4.Text = "Register now";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Rejestracja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -423,31 +439,32 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox number_txt;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox street_txt;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox city_txt;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox email_txt;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox password_txt;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox login_txt;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox lastname_txt;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox usernametxt;
+        private System.Windows.Forms.TextBox firstname_txt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button4;
     }
 }
