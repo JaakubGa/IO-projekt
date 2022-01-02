@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace wypozyczalnia.DSanak
 {
@@ -19,12 +20,54 @@ namespace wypozyczalnia.DSanak
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (usernametxt.Text == "test" && userpasswordtxt.Text == "testhaslo")
+
+
+            try
+
             {
-                Form ekran2 = new DSanak.Rejestracja.Rejestracja();
-                ekran2.Show();
-                this.Hide();
+
+                String str = "server=LAPTOP-9SUIHG4A;database= Wypozyczalnia;Trusted_Connection = True;";
+                SqlConnection con = new SqlConnection(str);
+
+                con.Open();
+
+                DataTable dtc = new DataTable();
+
+                SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Urzytkownicy where user_login= '" + usernametxt.Text + "' and user_haslo= '" + userpasswordtxt.Text + "'", con);
+
+                sda.Fill(dtc);
+                if (dtc.Rows[0][0].ToString() == "1")
+                {
+                    MessageBox.Show("Brawo, udało Ci się poprawnie zalogować");
+                }
+                else
+                {
+                    MessageBox.Show("Niestety, sprawdź swoje dane");
+                }
+
+
+
             }
+            catch (Exception es)
+
+            {
+
+                MessageBox.Show(es.Message);
+
+
+
+            }
+
+
+        }
+
+
+
+
+
+        private void LogowanieFormularz_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
