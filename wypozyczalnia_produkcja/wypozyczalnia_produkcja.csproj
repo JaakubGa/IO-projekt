@@ -60,6 +60,7 @@
     <Compile Include="Sabina\Pages\Wyszukiwarka.Designer.cs">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sabina\Params\AktywneFormularzePars.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -88,8 +89,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sabina\Params\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

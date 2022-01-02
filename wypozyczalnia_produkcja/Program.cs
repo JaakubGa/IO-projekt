@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Sabina.Pages;
+using wypozyczalnia_produkcja.Sabina.Params;
 
 namespace wypozyczalnia_produkcja
 {
@@ -16,9 +17,9 @@ namespace wypozyczalnia_produkcja
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-        
-            Application.Run(new Wyszukiwarka());
+            //Application.SetCompatibleTextRenderingDefault(false);
+          
+            Application.Run(AktywneFormularzePars.Wyszukiwarka);
         }
 
 

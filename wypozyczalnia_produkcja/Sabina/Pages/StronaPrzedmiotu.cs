@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wypozyczalnia_produkcja.Sabina.Params;
 
 namespace wypozyczalnia_produkcja.Sabina.Pages
 {
@@ -20,6 +21,13 @@ namespace wypozyczalnia_produkcja.Sabina.Pages
         private void StronaPrzedmiotu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AktywneFormularzePars.Wyszukiwarka.Show();
+            this.Close();
         }
     }
 }
