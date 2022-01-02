@@ -1,0 +1,11 @@
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe.config
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.pdb
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.AssemblyReference.cache
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Properties.Resources.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Sabina.Pages.StronaPrzedmiotu.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Sabina.Pages.Wyszukiwarka.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.GenerateResource.cache
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CoreCompileInputs.cache
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.exe
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.pdb

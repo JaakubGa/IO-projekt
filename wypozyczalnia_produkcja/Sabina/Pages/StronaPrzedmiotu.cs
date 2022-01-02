@@ -7,26 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using wypozyczalnia_produkcja.Sabina;
 
-namespace wypozyczalnia_produkcja
+namespace wypozyczalnia_produkcja.Sabina.Pages
 {
-    public partial class Form1 : Form
+    public partial class StronaPrzedmiotu : Form
     {
-
-    
-
-
-        public int MyProperty = trest.MyProperty;
-
-        public Form1()
+        public StronaPrzedmiotu()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void StronaPrzedmiotu_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
