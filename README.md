@@ -1,3 +1,1 @@
-## projektnaIO
-1. Wymyślenie tematu
-2. Nauczenie sie gita tak żeby dało się tego używać
+Dokumentacja i pliki pomocnicze: https://drive.google.com/drive/folders/1dGNt8KRKqB02JupqvwFYuj8Fbg-y2hgM?usp=sharing
