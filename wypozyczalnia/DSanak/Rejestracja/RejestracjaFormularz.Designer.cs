@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.box_rejestracja = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.clear_button = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
@@ -58,47 +58,47 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.groupBox1.SuspendLayout();
+            this.box_rejestracja.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // box_rejestracja
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.clear_button);
-            this.groupBox1.Controls.Add(this.exit_button);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.number_txt);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.street_txt);
-            this.groupBox1.Controls.Add(this.panel6);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.city_txt);
-            this.groupBox1.Controls.Add(this.panel7);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.email_txt);
-            this.groupBox1.Controls.Add(this.panel8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.password_txt);
-            this.groupBox1.Controls.Add(this.panel4);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.login_txt);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.lastname_txt);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.firstname_txt);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(901, 554);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.box_rejestracja.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.box_rejestracja.AutoSize = true;
+            this.box_rejestracja.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.box_rejestracja.Controls.Add(this.button4);
+            this.box_rejestracja.Controls.Add(this.clear_button);
+            this.box_rejestracja.Controls.Add(this.exit_button);
+            this.box_rejestracja.Controls.Add(this.label8);
+            this.box_rejestracja.Controls.Add(this.number_txt);
+            this.box_rejestracja.Controls.Add(this.panel5);
+            this.box_rejestracja.Controls.Add(this.label9);
+            this.box_rejestracja.Controls.Add(this.street_txt);
+            this.box_rejestracja.Controls.Add(this.panel6);
+            this.box_rejestracja.Controls.Add(this.label10);
+            this.box_rejestracja.Controls.Add(this.city_txt);
+            this.box_rejestracja.Controls.Add(this.panel7);
+            this.box_rejestracja.Controls.Add(this.label11);
+            this.box_rejestracja.Controls.Add(this.email_txt);
+            this.box_rejestracja.Controls.Add(this.panel8);
+            this.box_rejestracja.Controls.Add(this.label7);
+            this.box_rejestracja.Controls.Add(this.password_txt);
+            this.box_rejestracja.Controls.Add(this.panel4);
+            this.box_rejestracja.Controls.Add(this.label6);
+            this.box_rejestracja.Controls.Add(this.login_txt);
+            this.box_rejestracja.Controls.Add(this.panel3);
+            this.box_rejestracja.Controls.Add(this.label5);
+            this.box_rejestracja.Controls.Add(this.lastname_txt);
+            this.box_rejestracja.Controls.Add(this.panel2);
+            this.box_rejestracja.Controls.Add(this.label4);
+            this.box_rejestracja.Controls.Add(this.firstname_txt);
+            this.box_rejestracja.Controls.Add(this.panel1);
+            this.box_rejestracja.Controls.Add(this.label1);
+            this.box_rejestracja.Location = new System.Drawing.Point(0, 0);
+            this.box_rejestracja.Name = "box_rejestracja";
+            this.box_rejestracja.Size = new System.Drawing.Size(901, 554);
+            this.box_rejestracja.TabIndex = 0;
+            this.box_rejestracja.TabStop = false;
             // 
             // button4
             // 
@@ -284,6 +284,7 @@
             this.password_txt.Location = new System.Drawing.Point(199, 299);
             this.password_txt.Multiline = true;
             this.password_txt.Name = "password_txt";
+            this.password_txt.PasswordChar = '*';
             this.password_txt.Size = new System.Drawing.Size(204, 31);
             this.password_txt.TabIndex = 56;
             // 
@@ -406,13 +407,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 559);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.box_rejestracja);
             this.Name = "Rejestracja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
             this.Load += new System.EventHandler(this.Rejestracja_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.box_rejestracja.ResumeLayout(false);
+            this.box_rejestracja.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,7 +421,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox box_rejestracja;
         private System.Windows.Forms.Button clear_button;
         private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.Label label8;
