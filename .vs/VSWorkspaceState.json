@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\wypozyczalnia",
+    "\\wypozyczalnia\\JGasidło",
+    "\\wypozyczalnia_produkcja",
+    "\\wypozyczalnia_produkcja\\Kuba",
+    "\\wypozyczalnia_produkcja\\Kuba\\Grafiki"
   ],
-  "SelectedNode": "\\wypozyczalnia_produkcja.sln",
+  "SelectedNode": "\\wypozyczalnia_produkcja\\wypozyczalnia_produkcja.sln",
   "PreviewInSolutionExplorer": false
 }
