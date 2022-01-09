@@ -26,5 +26,10 @@ namespace wypozyczalnia_produkcja
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
