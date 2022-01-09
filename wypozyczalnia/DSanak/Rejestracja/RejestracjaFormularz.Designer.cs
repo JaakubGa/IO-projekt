@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.clear_button = new System.Windows.Forms.Button();
+            this.exit_button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.number_txt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -54,11 +55,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.firstname_txt = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,8 +67,8 @@
             this.groupBox1.AutoSize = true;
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.clear_button);
+            this.groupBox1.Controls.Add(this.exit_button);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.number_txt);
             this.groupBox1.Controls.Add(this.panel5);
@@ -93,7 +92,6 @@
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.firstname_txt);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -102,29 +100,45 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // button3
+            // button4
             // 
-            this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.Font = new System.Drawing.Font("Bauhaus 93", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(819, 495);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(76, 38);
-            this.button3.TabIndex = 71;
-            this.button3.Text = "CLEAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(369, 416);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(236, 35);
+            this.button4.TabIndex = 72;
+            this.button4.Text = "Register now";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // clear_button
             // 
-            this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.Font = new System.Drawing.Font("Bauhaus 93", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(738, 495);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 38);
-            this.button2.TabIndex = 70;
-            this.button2.Text = "EXIT";
-            this.button2.UseVisualStyleBackColor = false;
+            this.clear_button.AutoSize = true;
+            this.clear_button.BackColor = System.Drawing.Color.SteelBlue;
+            this.clear_button.Font = new System.Drawing.Font("Bauhaus 93", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_button.Location = new System.Drawing.Point(819, 495);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(76, 38);
+            this.clear_button.TabIndex = 71;
+            this.clear_button.Text = "CLEAR";
+            this.clear_button.UseVisualStyleBackColor = false;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
+            // exit_button
+            // 
+            this.exit_button.AutoSize = true;
+            this.exit_button.BackColor = System.Drawing.Color.SteelBlue;
+            this.exit_button.Font = new System.Drawing.Font("Bauhaus 93", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit_button.Location = new System.Drawing.Point(738, 495);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(75, 38);
+            this.exit_button.TabIndex = 70;
+            this.exit_button.Text = "EXIT";
+            this.exit_button.UseVisualStyleBackColor = false;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // label8
             // 
@@ -366,21 +380,6 @@
             this.firstname_txt.Size = new System.Drawing.Size(204, 31);
             this.firstname_txt.TabIndex = 47;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(369, 498);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 35);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "JOIN US";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
@@ -395,26 +394,12 @@
             this.label1.Font = new System.Drawing.Font("Bauhaus 93", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(324, 9);
+            this.label1.Location = new System.Drawing.Point(331, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 45);
             this.label1.TabIndex = 44;
             this.label1.Text = "Create account";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(347, 385);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 35);
-            this.button4.TabIndex = 72;
-            this.button4.Text = "Register now";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Rejestracja
             // 
@@ -436,8 +421,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clear_button;
+        private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox number_txt;
         private System.Windows.Forms.Panel panel5;
@@ -461,7 +446,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox firstname_txt;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

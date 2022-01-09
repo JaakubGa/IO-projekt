@@ -94,5 +94,24 @@ namespace wypozyczalnia.DSanak.Rejestracja
 
 
         }
+
+        private void exit_button_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "What are you doing?", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void clear_button_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Clean all", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                login_txt.Text = "";
+                password_txt.Text = "";
+            }
+        }
     }
 }
