@@ -26,7 +26,7 @@ namespace wypozyczalnia.DSanak
 
             {
 
-                String str = "server=LAPTOP-9SUIHG4A;database= Wypozyczalnia;Trusted_Connection = True;";
+                String str = "server=LAPTOP-9SUIHG4A;database= Wypozyczalnia; Trusted_Connection = True;";
                 SqlConnection con = new SqlConnection(str);
 
                 con.Open();
@@ -68,6 +68,27 @@ namespace wypozyczalnia.DSanak
         private void LogowanieFormularz_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "What are you doing?", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+           
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Clean all", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                usernametxt.Text = "";
+                userpasswordtxt.Text = "";
+            }
         }
     }
 }
