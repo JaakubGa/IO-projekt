@@ -25,15 +25,18 @@ namespace wypozyczalnia.DSanak
             try
 
             {
-
-                String str = "server=LAPTOP-9SUIHG4A;database= Wypozyczalnia; Trusted_Connection = True;";
+                //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;
+                //Integrated Security=True;Connect Timeout=30;Encrypt=False;
+                //TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+                String str = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Wypozyczalnia;Integrated Security=True;Connect Timeout=30;Encrypt=False;" +
+                    "TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 SqlConnection con = new SqlConnection(str);
 
                 con.Open();
 
                 DataTable dtc = new DataTable();
 
-                SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Urzytkownicy where user_login= '" + usernametxt.Text + "' and user_haslo= '" + userpasswordtxt.Text + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Uzytkownik where nick= '" + usernametxt.Text + "' and haslo= '" + userpasswordtxt.Text + "'", con);
 
                 sda.Fill(dtc);
                 if (dtc.Rows[0][0].ToString() == "1")

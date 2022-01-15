@@ -58,11 +58,12 @@ namespace wypozyczalnia.DSanak.Rejestracja
 
                 DataTable dtc = new DataTable();
 
-                String czyDuplikat = "select Count(*) from Urzytkownicy where user_login= '" + login_txt.Text + "' and user_haslo= '" + password_txt.Text + "'";
-                String dodawanie = "INSERT INTO Urzytkownicy(user_login,user_haslo,user_imie,user_nazwisko,user_miasto,user_ulica,user_numerDomu,user_email) " +
+                String czyDuplikat = "select Count(*) from Uzytkownik where nick= '" + login_txt.Text + "' and haslo= '" + password_txt.Text + "'";
+                String dodawanie = "INSERT INTO Uzytkownik(nick,haslo,imie,nazwisko,nr_telefonu,e_mail) " +
                     "VALUES ('" + login_txt.Text + "', '" + password_txt.Text + "', '" + firstname_txt.Text + "', '" + lastname_txt.Text + "','" + city_txt.Text + "','" + street_txt.Text + "','" + number_txt.Text + "','" + email_txt.Text + "')";
 
-                string dodawanie2 = "INSERT INTO Urzytkownicy(user_login,user_haslo,user_imie,user_nazwisko,user_miasto,user_ulica,user_numerDomu,user_email) Values ('Przyklad10','Przyklad20','Przyklad30','Przyklad40','Przyklad10','Przyklad02','Prz0yklad3','Pr0zyklad4')";
+                string dodawanie_adresu = "INSERT INTO Adres(miasto,kod_pocztowy,ulica,numer_domu,numer_mieszkania) " +
+                    "Values ('"+city_txt.Text+"','KODPOCZTOWY_DO_ZROBIENIA','"+number_txt.Text+"','NUMER_MIESZKANIA DO ZROBIENIA')";
                 string select = "Select *  from Urzytkownicy";
                 SqlCommand kwerenda1 = new SqlCommand(dodawanie, con);
 

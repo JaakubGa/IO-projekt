@@ -16,8 +16,8 @@ namespace wypozyczalnia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-          // Application.Run(new DSanak.LogowanieFormularz());
-          Application.Run(new DSanak.Rejestracja.Rejestracja());
+           Application.Run(new DSanak.LogowanieFormularz());
+          //Application.Run(new DSanak.Rejestracja.Rejestracja());
             
 
            

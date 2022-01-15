@@ -77,11 +77,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Wypozyczalnia_databaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Wypozyczalnia_databaseDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="DSanak\LogowanieFormularz.resx">
       <DependentUpon>LogowanieFormularz.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,17 +102,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Wypozyczalnia_databaseDataSet.xsc">
-      <DependentUpon>Wypozyczalnia_databaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Wypozyczalnia_databaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Wypozyczalnia_databaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Wypozyczalnia_databaseDataSet.xss">
-      <DependentUpon>Wypozyczalnia_databaseDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -130,15 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gasidlo\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Wypozyczalnia_database.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Wypozyczalnia_database_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Wypozyczalnia_database.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
