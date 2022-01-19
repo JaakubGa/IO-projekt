@@ -36,5 +36,13 @@ namespace wypozyczalnia_produkcja
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button3.Text = "Musisz potwierdzić zakup";
+            MessageBox.Show("Na pewno wybrałeś wszystkie produkty?", "Potwierdzenie", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            button3.Text = "Finalizuj zakupy";
+
+        }
     }
 }
