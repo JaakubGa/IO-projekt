@@ -105,6 +105,7 @@ namespace wypozyczalnia_produkcja
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImage = global::wypozyczalnia_produkcja.Properties.Resources.Logo;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
