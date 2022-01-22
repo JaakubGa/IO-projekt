@@ -17,15 +17,9 @@ namespace wypozyczalnia_produkcja
         static void Main()
         {
             Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-          
-            Application.Run(AktywneFormularzePars.Wyszukiwarka);
+            Application.SetCompatibleTextRenderingDefault(false);
+            Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
+            Application.Run(wyszukiwarka);
         }
-
-
-
-
-
-
     }
 }
