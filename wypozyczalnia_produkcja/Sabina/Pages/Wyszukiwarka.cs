@@ -24,8 +24,7 @@ namespace wypozyczalnia_produkcja.Sabina.Pages
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var przedmiot = new StronaPrzedmiotu();
+            StronaPrzedmiotu przedmiot = new StronaPrzedmiotu(6);
             przedmiot.Show();
         }
     }
