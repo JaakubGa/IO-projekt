@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Sabina.Models;
-using wypozyczalnia_produkcja.Sabina.Params;
 
 namespace wypozyczalnia_produkcja.Sabina.Pages
 {

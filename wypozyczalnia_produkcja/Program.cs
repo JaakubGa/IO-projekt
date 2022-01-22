@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Sabina.Pages;
-using wypozyczalnia_produkcja.Sabina.Params;
 
 namespace wypozyczalnia_produkcja
 {

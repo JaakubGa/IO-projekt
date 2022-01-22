@@ -64,6 +64,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sabina\Connection\Connection.cs" />
+    <Compile Include="Sabina\Models\Adres.cs" />
     <Compile Include="Sabina\Models\PrzedmiotModel.cs" />
     <Compile Include="Sabina\Models\Uzytkownik.cs" />
     <Compile Include="Sabina\Pages\StronaPrzedmiotu.cs">
