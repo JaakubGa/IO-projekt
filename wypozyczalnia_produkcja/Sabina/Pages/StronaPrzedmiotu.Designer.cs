@@ -1,5 +1,6 @@
 ﻿
 using System.Windows.Forms;
+using wypozyczalnia_produkcja.Sabina.Models;
 
 namespace wypozyczalnia_produkcja.Sabina.Pages
 {
@@ -32,52 +33,66 @@ namespace wypozyczalnia_produkcja.Sabina.Pages
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+            private void InitializeComponent(/*PrzedmiotModel przedmiot*/)
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCofnij = new System.Windows.Forms.Button();
             this.labelNazwaPrzedmiotu = new System.Windows.Forms.Label();
             this.labelNickWlasciciela = new System.Windows.Forms.Label();
+            this.labelKategoria = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonCofnij
             // 
-            this.button1.Location = new System.Drawing.Point(67, 375);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Wróć do wyszukiwarki";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCofnij.Location = new System.Drawing.Point(50, 305);
+            this.buttonCofnij.Name = "buttonCofnij";
+            this.buttonCofnij.Size = new System.Drawing.Size(146, 24);
+            this.buttonCofnij.TabIndex = 0;
+            this.buttonCofnij.Text = "Wróć do wyszukiwarki";
+            this.buttonCofnij.UseVisualStyleBackColor = true;
+            this.buttonCofnij.Click += new System.EventHandler(this.buttonCofnij_Click);
             // 
             // labelNazwaPrzedmiotu
             // 
             this.labelNazwaPrzedmiotu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelNazwaPrzedmiotu.Location = new System.Drawing.Point(67, 45);
+            this.labelNazwaPrzedmiotu.Location = new System.Drawing.Point(50, 50);
+            this.labelNazwaPrzedmiotu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNazwaPrzedmiotu.Name = "labelNazwaPrzedmiotu";
-            this.labelNazwaPrzedmiotu.Size = new System.Drawing.Size(614, 27);
+            this.labelNazwaPrzedmiotu.Size = new System.Drawing.Size(405, 22);
             this.labelNazwaPrzedmiotu.TabIndex = 1;
+            this.labelNazwaPrzedmiotu.Text = "Agregat 3000";
             // 
             // labelNickWlasciciela
             // 
             this.labelNickWlasciciela.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelNickWlasciciela.Location = new System.Drawing.Point(629, 199);
+            this.labelNickWlasciciela.Location = new System.Drawing.Point(472, 162);
+            this.labelNickWlasciciela.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNickWlasciciela.Name = "labelNickWlasciciela";
-            this.labelNickWlasciciela.Size = new System.Drawing.Size(100, 23);
+            this.labelNickWlasciciela.Size = new System.Drawing.Size(76, 19);
             this.labelNickWlasciciela.TabIndex = 2;
             this.labelNickWlasciciela.Text = "nick";
             // 
+            // labelKategoria
+            // 
+            this.labelKategoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelKategoria.Location = new System.Drawing.Point(50, 18);
+            this.labelKategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelKategoria.Name = "labelKategoria";
+            this.labelKategoria.Size = new System.Drawing.Size(405, 22);
+            this.labelKategoria.TabIndex = 3;
+            this.labelKategoria.Text = "Agregat 3000";
+            // 
             // StronaPrzedmiotu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.labelKategoria);
             this.Controls.Add(this.labelNickWlasciciela);
             this.Controls.Add(this.labelNazwaPrzedmiotu);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Controls.Add(this.buttonCofnij);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StronaPrzedmiotu";
-            this.Text = "{Nazwa przedmiotu z bazy}";
+            this.Text = "Agregat 3000";
             this.Load += new System.EventHandler(this.StronaPrzedmiotu_Load);
             this.ResumeLayout(false);
 
@@ -85,8 +100,9 @@ namespace wypozyczalnia_produkcja.Sabina.Pages
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCofnij;
         private Label labelNazwaPrzedmiotu;
         private Label labelNickWlasciciela;
+        private Label labelKategoria;
     }
 }
