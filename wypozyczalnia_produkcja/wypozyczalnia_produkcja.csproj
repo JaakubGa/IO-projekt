@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,19 +63,22 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sabina\Pages\StronaPrzedmiotu.cs">
+    <Compile Include="Params\Connection.cs" />
+    <Compile Include="Models\Adres.cs" />
+    <Compile Include="Models\PrzedmiotModel.cs" />
+    <Compile Include="Models\Uzytkownik.cs" />
+    <Compile Include="Pages\StronaPrzedmiotu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sabina\Pages\StronaPrzedmiotu.Designer.cs">
+    <Compile Include="Pages\StronaPrzedmiotu.Designer.cs">
       <DependentUpon>StronaPrzedmiotu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sabina\Pages\Wyszukiwarka.cs">
+    <Compile Include="Pages\Wyszukiwarka.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sabina\Pages\Wyszukiwarka.Designer.cs">
+    <Compile Include="Pages\Wyszukiwarka.Designer.cs">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sabina\Params\AktywneFormularzePars.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,10 +88,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Sabina\Pages\StronaPrzedmiotu.resx">
+    <EmbeddedResource Include="Pages\StronaPrzedmiotu.resx">
       <DependentUpon>StronaPrzedmiotu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sabina\Pages\Wyszukiwarka.resx">
+    <EmbeddedResource Include="Pages\Wyszukiwarka.resx">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -89,6 +107,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

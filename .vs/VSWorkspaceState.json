@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\wypozyczalnia_produkcja",
+    "\\wypozyczalnia_produkcja\\Sabina",
+    "\\wypozyczalnia_produkcja\\Sabina\\Pages"
   ],
-  "SelectedNode": "\\wypozyczalnia_produkcja.sln",
+  "SelectedNode": "\\wypozyczalnia_produkcja\\Sabina\\Pages\\StronaPrzedmiotu.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

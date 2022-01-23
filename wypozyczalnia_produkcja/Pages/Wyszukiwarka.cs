@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace wypozyczalnia_produkcja.Sabina.Pages
+using wypozyczalnia_produkcja.Sabina.Pages;
+//sabina
+namespace wypozyczalnia_produkcja.Pages
 {
     public partial class Wyszukiwarka : Form
     {
@@ -24,8 +25,7 @@ namespace wypozyczalnia_produkcja.Sabina.Pages
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var przedmiot = new StronaPrzedmiotu();
+            StronaPrzedmiotu przedmiot = new StronaPrzedmiotu(6);
             przedmiot.Show();
         }
     }
