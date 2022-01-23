@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.box_rejestracja = new System.Windows.Forms.GroupBox();
+            this.post_code_txt = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.post_code = new System.Windows.Forms.Label();
+            this.number_of_apart_txt = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.clear_button = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
@@ -58,6 +63,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.apartment_number = new System.Windows.Forms.Label();
             this.box_rejestracja.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +72,12 @@
             this.box_rejestracja.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.box_rejestracja.AutoSize = true;
             this.box_rejestracja.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.box_rejestracja.Controls.Add(this.apartment_number);
+            this.box_rejestracja.Controls.Add(this.post_code_txt);
+            this.box_rejestracja.Controls.Add(this.panel10);
+            this.box_rejestracja.Controls.Add(this.post_code);
+            this.box_rejestracja.Controls.Add(this.number_of_apart_txt);
+            this.box_rejestracja.Controls.Add(this.panel9);
             this.box_rejestracja.Controls.Add(this.button4);
             this.box_rejestracja.Controls.Add(this.clear_button);
             this.box_rejestracja.Controls.Add(this.exit_button);
@@ -94,11 +106,63 @@
             this.box_rejestracja.Controls.Add(this.firstname_txt);
             this.box_rejestracja.Controls.Add(this.panel1);
             this.box_rejestracja.Controls.Add(this.label1);
-            this.box_rejestracja.Location = new System.Drawing.Point(0, 0);
+            this.box_rejestracja.Location = new System.Drawing.Point(124, -26);
             this.box_rejestracja.Name = "box_rejestracja";
             this.box_rejestracja.Size = new System.Drawing.Size(901, 554);
             this.box_rejestracja.TabIndex = 0;
             this.box_rejestracja.TabStop = false;
+            this.box_rejestracja.Enter += new System.EventHandler(this.box_rejestracja_Enter);
+            // 
+            // post_code_txt
+            // 
+            this.post_code_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.post_code_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.post_code_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.post_code_txt.Location = new System.Drawing.Point(653, 359);
+            this.post_code_txt.Multiline = true;
+            this.post_code_txt.Name = "post_code_txt";
+            this.post_code_txt.Size = new System.Drawing.Size(204, 31);
+            this.post_code_txt.TabIndex = 77;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel10.Location = new System.Drawing.Point(487, 396);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(400, 1);
+            this.panel10.TabIndex = 76;
+            // 
+            // post_code
+            // 
+            this.post_code.BackColor = System.Drawing.Color.SteelBlue;
+            this.post_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.post_code.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.post_code.Location = new System.Drawing.Point(487, 357);
+            this.post_code.Name = "post_code";
+            this.post_code.Size = new System.Drawing.Size(111, 31);
+            this.post_code.TabIndex = 75;
+            this.post_code.Text = "POST-CODE";
+            this.post_code.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.post_code.Click += new System.EventHandler(this.post_code_Click);
+            // 
+            // number_of_apart_txt
+            // 
+            this.number_of_apart_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.number_of_apart_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.number_of_apart_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.number_of_apart_txt.Location = new System.Drawing.Point(653, 295);
+            this.number_of_apart_txt.Multiline = true;
+            this.number_of_apart_txt.Name = "number_of_apart_txt";
+            this.number_of_apart_txt.Size = new System.Drawing.Size(204, 31);
+            this.number_of_apart_txt.TabIndex = 74;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.panel9.Location = new System.Drawing.Point(487, 336);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(400, 1);
+            this.panel9.TabIndex = 73;
             // 
             // button4
             // 
@@ -106,7 +170,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(369, 416);
+            this.button4.Location = new System.Drawing.Point(362, 479);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(236, 35);
             this.button4.TabIndex = 72;
@@ -145,7 +209,7 @@
             this.label8.BackColor = System.Drawing.Color.SteelBlue;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(494, 299);
+            this.label8.Location = new System.Drawing.Point(487, 242);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 31);
             this.label8.TabIndex = 69;
@@ -157,7 +221,7 @@
             this.number_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.number_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.number_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.number_txt.Location = new System.Drawing.Point(660, 299);
+            this.number_txt.Location = new System.Drawing.Point(653, 242);
             this.number_txt.Multiline = true;
             this.number_txt.Name = "number_txt";
             this.number_txt.Size = new System.Drawing.Size(204, 31);
@@ -166,7 +230,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel5.Location = new System.Drawing.Point(494, 336);
+            this.panel5.Location = new System.Drawing.Point(487, 279);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(400, 1);
             this.panel5.TabIndex = 67;
@@ -176,7 +240,7 @@
             this.label9.BackColor = System.Drawing.Color.SteelBlue;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(494, 240);
+            this.label9.Location = new System.Drawing.Point(487, 183);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 31);
             this.label9.TabIndex = 66;
@@ -188,7 +252,7 @@
             this.street_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.street_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.street_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.street_txt.Location = new System.Drawing.Point(660, 240);
+            this.street_txt.Location = new System.Drawing.Point(653, 183);
             this.street_txt.Multiline = true;
             this.street_txt.Name = "street_txt";
             this.street_txt.Size = new System.Drawing.Size(204, 31);
@@ -197,7 +261,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel6.Location = new System.Drawing.Point(494, 277);
+            this.panel6.Location = new System.Drawing.Point(487, 220);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(400, 1);
             this.panel6.TabIndex = 64;
@@ -207,7 +271,7 @@
             this.label10.BackColor = System.Drawing.Color.SteelBlue;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(494, 177);
+            this.label10.Location = new System.Drawing.Point(487, 120);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 31);
             this.label10.TabIndex = 63;
@@ -219,7 +283,7 @@
             this.city_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.city_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.city_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.city_txt.Location = new System.Drawing.Point(660, 177);
+            this.city_txt.Location = new System.Drawing.Point(653, 120);
             this.city_txt.Multiline = true;
             this.city_txt.Name = "city_txt";
             this.city_txt.Size = new System.Drawing.Size(204, 31);
@@ -228,7 +292,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel7.Location = new System.Drawing.Point(494, 214);
+            this.panel7.Location = new System.Drawing.Point(487, 157);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(400, 1);
             this.panel7.TabIndex = 61;
@@ -238,7 +302,7 @@
             this.label11.BackColor = System.Drawing.Color.SteelBlue;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(494, 120);
+            this.label11.Location = new System.Drawing.Point(33, 359);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(111, 31);
             this.label11.TabIndex = 60;
@@ -250,7 +314,7 @@
             this.email_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.email_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.email_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.email_txt.Location = new System.Drawing.Point(660, 120);
+            this.email_txt.Location = new System.Drawing.Point(199, 359);
             this.email_txt.Multiline = true;
             this.email_txt.Name = "email_txt";
             this.email_txt.Size = new System.Drawing.Size(204, 31);
@@ -259,7 +323,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel8.Location = new System.Drawing.Point(494, 157);
+            this.panel8.Location = new System.Drawing.Point(33, 396);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(400, 1);
             this.panel8.TabIndex = 58;
@@ -402,11 +466,23 @@
             this.label1.Text = "Create account";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // apartment_number
+            // 
+            this.apartment_number.BackColor = System.Drawing.Color.SteelBlue;
+            this.apartment_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.apartment_number.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apartment_number.Location = new System.Drawing.Point(487, 297);
+            this.apartment_number.Name = "apartment_number";
+            this.apartment_number.Size = new System.Drawing.Size(111, 31);
+            this.apartment_number.TabIndex = 78;
+            this.apartment_number.Text = "Apart. nubmer";
+            this.apartment_number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Rejestracja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 559);
+            this.ClientSize = new System.Drawing.Size(1127, 543);
             this.Controls.Add(this.box_rejestracja);
             this.Name = "Rejestracja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -451,5 +527,11 @@
         private System.Windows.Forms.Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label post_code;
+        private System.Windows.Forms.TextBox number_of_apart_txt;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.TextBox post_code_txt;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label apartment_number;
     }
 }

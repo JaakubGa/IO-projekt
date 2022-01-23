@@ -18,6 +18,8 @@ namespace wypozyczalnia.DSanak
             InitializeComponent();
         }
 
+        public Rejestracja.Rejestracja rejestracja = new Rejestracja.Rejestracja();
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +44,9 @@ namespace wypozyczalnia.DSanak
                 if (dtc.Rows[0][0].ToString() == "1")
                 {
                     MessageBox.Show("Brawo, udało Ci się poprawnie zalogować");
+                    this.Hide();
+                    rejestracja.Show();
+
                 }
                 else
                 {
