@@ -1,10 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< HEAD
     "\\wypozyczalnia_produkcja",
     "\\wypozyczalnia_produkcja\\Sabina",
     "\\wypozyczalnia_produkcja\\Sabina\\Pages"
   ],
   "SelectedNode": "\\wypozyczalnia_produkcja\\Sabina\\Pages\\StronaPrzedmiotu.Designer.cs",
+=======
+    "\\wypozyczalnia",
+    "\\wypozyczalnia\\DSanak"
+  ],
+  "SelectedNode": "\\wypozyczalnia\\wypozyczalnia.sln",
+>>>>>>> 4b3f1781938150362943e6fa6887e6d1478f8788
   "PreviewInSolutionExplorer": false
 }
