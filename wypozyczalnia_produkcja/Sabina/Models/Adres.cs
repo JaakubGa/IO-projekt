@@ -16,7 +16,7 @@ namespace wypozyczalnia_produkcja.Sabina.Models
         public string Ulica;
         public string NrDomu;
         public string NrMieszkania;
-
+        //sabina
         public Adres(int id)
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))

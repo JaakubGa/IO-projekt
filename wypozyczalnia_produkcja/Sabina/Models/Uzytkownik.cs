@@ -18,7 +18,7 @@ namespace wypozyczalnia_produkcja.Sabina.Models
         public string Telefon = string.Empty;
         public string Email = string.Empty;
         public Adres Adres;
-
+        //sabina
         public Uzytkownik(int id)
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))

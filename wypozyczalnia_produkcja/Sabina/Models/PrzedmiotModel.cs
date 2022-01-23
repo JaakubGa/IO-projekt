@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using wypozyczalnia_produkcja.Sabina.Connection;
 
-
+//sabina
 namespace wypozyczalnia_produkcja.Sabina.Models
 {
     public class PrzedmiotModel

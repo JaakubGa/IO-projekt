@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Sabina.Models;
-
+//sabina
 namespace wypozyczalnia_produkcja.Sabina.Pages
 {
     public partial class StronaPrzedmiotu : Form
