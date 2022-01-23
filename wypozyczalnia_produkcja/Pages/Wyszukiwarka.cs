@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wypozyczalnia_produkcja.Sabina.Pages;
 //sabina
-namespace wypozyczalnia_produkcja.Sabina.Pages
+namespace wypozyczalnia_produkcja.Pages
 {
     public partial class Wyszukiwarka : Form
     {

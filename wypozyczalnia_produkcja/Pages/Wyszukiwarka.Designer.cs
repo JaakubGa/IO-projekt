@@ -1,5 +1,5 @@
 ﻿
-namespace wypozyczalnia_produkcja.Sabina.Pages
+namespace wypozyczalnia_produkcja.Pages
 {
     partial class Wyszukiwarka
     {

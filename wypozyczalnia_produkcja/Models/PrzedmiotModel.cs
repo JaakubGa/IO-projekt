@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
-using wypozyczalnia_produkcja.Sabina.Connection;
+using wypozyczalnia_produkcja.Params;
 
 //sabina
 namespace wypozyczalnia_produkcja.Sabina.Models
