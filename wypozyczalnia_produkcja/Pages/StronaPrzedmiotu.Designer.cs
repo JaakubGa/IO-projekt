@@ -1,15 +1,11 @@
-﻿
-using System.Windows.Forms;
-using wypozyczalnia_produkcja.Sabina.Models;
+﻿using System.Windows.Forms;
 
-namespace wypozyczalnia_produkcja.Sabina.Pages
+//sabina
+namespace wypozyczalnia_produkcja.Pages
 {
     partial class StronaPrzedmiotu
     {
-        //Public
-        
-
-        /// <summary>
+       /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;

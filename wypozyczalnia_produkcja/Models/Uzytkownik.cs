@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using wypozyczalnia_produkcja.Params;
 
-namespace wypozyczalnia_produkcja.Sabina.Models
+//sabina
+namespace wypozyczalnia_produkcja.Models
 {
     public class Uzytkownik
     {
@@ -15,10 +11,12 @@ namespace wypozyczalnia_produkcja.Sabina.Models
         public string Imie;
         public string Nazwisko;
         public string Nick;
+        private string _haslo;
         public string Telefon = string.Empty;
         public string Email = string.Empty;
         public Adres Adres;
-        //sabina
+
+        //CTOR
         public Uzytkownik(int id)
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))
@@ -36,14 +34,17 @@ namespace wypozyczalnia_produkcja.Sabina.Models
                     Imie = reader[2].ToString();
                     Nazwisko = reader[3].ToString();
                     Nick = reader[4].ToString();
-                    Telefon = (string)reader[5];
-                    Email = reader[6].ToString();
+                    _haslo = reader[5].ToString();
+                    Telefon = reader[6].ToString();
+                    Email = reader[7].ToString();
                 }
 
                 reader.Close();
                 Connection.Close();
             }
         }
+
+        //methods
         public void DopiszAdres()
         {
             Adres = new Adres(IdAdresu);

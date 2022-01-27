@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlClient;
 using wypozyczalnia_produkcja.Params;
 
-namespace wypozyczalnia_produkcja.Sabina.Models
+//sabina
+namespace wypozyczalnia_produkcja.Models
 {
     public class Adres
     {
@@ -16,7 +12,8 @@ namespace wypozyczalnia_produkcja.Sabina.Models
         public string Ulica;
         public string NrDomu;
         public string NrMieszkania;
-        //sabina
+        
+        //CTOR
         public Adres(int id)
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))
@@ -41,6 +38,8 @@ namespace wypozyczalnia_produkcja.Sabina.Models
             }
 
         }
+
+        //methods
         public override string ToString()
 
         {

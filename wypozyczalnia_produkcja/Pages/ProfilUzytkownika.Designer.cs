@@ -1,6 +1,6 @@
-﻿
-using wypozyczalnia_produkcja.Sabina.Models;
+﻿using wypozyczalnia_produkcja.Models;
 
+//hubert
 namespace wypozyczalnia_produkcja.Pages
 {
     partial class ProfilUzytkownika
@@ -31,7 +31,7 @@ namespace wypozyczalnia_produkcja.Pages
         /// </summary>
         private void InitializeComponent(/*int id*/)
         {
-            Uzytkownik userOId1 = new Uzytkownik(1);
+            Uzytkownik userOId1 = new Uzytkownik(2);
 
             //elementy formularza
             this.imie = new System.Windows.Forms.Label();
@@ -49,7 +49,6 @@ namespace wypozyczalnia_produkcja.Pages
             this.imie.Size = new System.Drawing.Size(180, 23);
             this.imie.TabIndex = 1;
             this.imie.Text = userOId1.Imie;
-            this.imie.Click += new System.EventHandler(this.label1_Click);
             // 
             // nazwisko
             // 
@@ -88,7 +87,10 @@ namespace wypozyczalnia_produkcja.Pages
             this.adres.Name = "adres";
             this.adres.Size = new System.Drawing.Size(180, 23);
             this.adres.TabIndex = 5;
-            this.adres.Text = userOId1.Adres.ToString();
+            if(userOId1.Adres != null)
+            {
+                this.adres.Text = userOId1.Adres.ToString();
+            }
             
             // 
             // ProfilUzytkownika

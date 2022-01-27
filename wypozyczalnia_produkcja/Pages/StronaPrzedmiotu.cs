@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using wypozyczalnia_produkcja.Sabina.Models;
+using wypozyczalnia_produkcja.Models;
+
 //sabina
-namespace wypozyczalnia_produkcja.Sabina.Pages
+namespace wypozyczalnia_produkcja.Pages
 {
     public partial class StronaPrzedmiotu : Form
     {
