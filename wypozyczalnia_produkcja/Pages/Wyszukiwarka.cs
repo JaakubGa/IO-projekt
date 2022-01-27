@@ -28,5 +28,11 @@ namespace wypozyczalnia_produkcja.Pages
             StronaPrzedmiotu przedmiot = new StronaPrzedmiotu(6);
             przedmiot.Show();
         }
+
+        private void buttonProfilUzytkownika_Click(object sender, EventArgs e)
+        {
+            ProfilUzytkownika profil = new ProfilUzytkownika();
+            profil.Show();
+        }
     }
 }

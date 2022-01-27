@@ -31,6 +31,7 @@ namespace wypozyczalnia_produkcja.Pages
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonProfilUzytkownika = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,11 +54,23 @@ namespace wypozyczalnia_produkcja.Pages
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonProfilUzytkownika
+            // 
+            this.buttonProfilUzytkownika.Location = new System.Drawing.Point(473, 12);
+            this.buttonProfilUzytkownika.Name = "buttonProfilUzytkownika";
+            this.buttonProfilUzytkownika.Size = new System.Drawing.Size(115, 23);
+            this.buttonProfilUzytkownika.TabIndex = 2;
+            this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
+            this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
+            this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
+            // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.buttonProfilUzytkownika);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -72,5 +85,6 @@ namespace wypozyczalnia_produkcja.Pages
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonProfilUzytkownika;
     }
 }
