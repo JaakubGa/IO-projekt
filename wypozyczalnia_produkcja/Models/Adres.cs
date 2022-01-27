@@ -39,6 +39,13 @@ namespace wypozyczalnia_produkcja.Sabina.Models
                 reader.Close();
                 Connection.Close();
             }
+
+        }
+        public override string ToString()
+
+        {
+            if(NrMieszkania == string.Empty || NrMieszkania == null) return $"ul. {Ulica} {NrDomu}/{NrMieszkania}, {KodPocztowy} {Miasto}";
+            return $"ul. {Ulica} {NrDomu}, {KodPocztowy} {Miasto}";
         }
     }
 }
