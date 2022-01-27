@@ -42,11 +42,6 @@ namespace wypozyczalnia_produkcja.Models
                 reader.Close();
                 Connection.Close();
             }
-        }
-
-        //methods
-        public void DopiszAdres()
-        {
             Adres = new Adres(IdAdresu);
         }
     }

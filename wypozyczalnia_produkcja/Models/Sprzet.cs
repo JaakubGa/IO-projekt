@@ -4,7 +4,7 @@ using wypozyczalnia_produkcja.Params;
 //sabina
 namespace wypozyczalnia_produkcja.Models
 {
-    public class PrzedmiotModel
+    public class Sprzet
     {
         //public
         public int Id;
@@ -17,7 +17,7 @@ namespace wypozyczalnia_produkcja.Models
         public Uzytkownik Uzytkownik;
 
         //CTOR
-        public PrzedmiotModel(int id)
+        public Sprzet(int id)
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))
             {
@@ -40,7 +40,7 @@ namespace wypozyczalnia_produkcja.Models
                 Connection.Close();
             }
             DopiszKategorie();
-            DopiszUzytkownika();
+            Uzytkownik = new Uzytkownik(IdWlasciciela);
         }
 
         public void DopiszKategorie()
@@ -60,12 +60,6 @@ namespace wypozyczalnia_produkcja.Models
                 reader.Close();
                 Connection.Close();
             }
-        }
-
-        //methods
-        public void DopiszUzytkownika()
-        {
-            Uzytkownik = new Uzytkownik(IdWlasciciela);
         }
     }
 }

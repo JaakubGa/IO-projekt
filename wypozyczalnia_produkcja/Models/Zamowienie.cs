@@ -12,8 +12,8 @@ namespace wypozyczalnia_produkcja.Models
         public string DataOd;
         public string DataDo;
         public decimal Cena;
-        public Uzytkownik uzytkownik;
-        public Sprzet sprzet;
+        public Uzytkownik Uzytkownik;
+        public Sprzet Sprzet;
 
         public Zamowienie(int id)
         {
@@ -37,6 +37,8 @@ namespace wypozyczalnia_produkcja.Models
                 reader.Close();
                 Connection.Close();
             }
+            Uzytkownik = new Uzytkownik(IdUzytkownika);
+            Sprzet = new Sprzet(IdSprzetu);
         }
     }
 }

@@ -36,7 +36,6 @@ namespace wypozyczalnia_produkcja.Models
                 reader.Close();
                 Connection.Close();
             }
-
         }
 
         //methods

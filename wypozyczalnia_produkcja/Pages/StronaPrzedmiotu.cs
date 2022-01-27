@@ -9,7 +9,7 @@ namespace wypozyczalnia_produkcja.Pages
     {
         public StronaPrzedmiotu(int id)
         {
-            PrzedmiotModel przedmiot = new PrzedmiotModel(id);
+            Sprzet przedmiot = new Sprzet(id);
             InitializeComponent(/*przedmiot*/);
         }
 
