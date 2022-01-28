@@ -30,8 +30,7 @@ namespace wypozyczalnia.DSanak
                 //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;
                 //Integrated Security=True;Connect Timeout=30;Encrypt=False;
                 //TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-                String str = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Wypozyczalnia;Integrated Security=True;Connect Timeout=30;Encrypt=False;" +
-                    "TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String str = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Wypozyczalnia;Integrated Security=True;";
                 SqlConnection con = new SqlConnection(str);
 
                 con.Open();

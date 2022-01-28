@@ -62,11 +62,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Zamowienie.cs" />
+    <Compile Include="Pages\LogowanieFormularz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\LogowanieFormularz.Designer.cs">
+      <DependentUpon>LogowanieFormularz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ProfilUzytkownika.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pages\ProfilUzytkownika.Designer.cs">
       <DependentUpon>ProfilUzytkownika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RejestracjaFormularz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\RejestracjaFormularz.Designer.cs">
+      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,8 +98,14 @@
     <Compile Include="Pages\Wyszukiwarka.Designer.cs">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pages\LogowanieFormularz.resx">
+      <DependentUpon>LogowanieFormularz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProfilUzytkownika.resx">
       <DependentUpon>ProfilUzytkownika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\RejestracjaFormularz.resx">
+      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +146,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Grafiki\Logowanie\login.png" />
+    <Content Include="Grafiki\Logowanie\user_log.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
