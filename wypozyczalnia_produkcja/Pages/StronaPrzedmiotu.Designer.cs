@@ -1,10 +1,12 @@
 ﻿using System.Windows.Forms;
+using wypozyczalnia_produkcja.Models;
 
 //sabina
 namespace wypozyczalnia_produkcja.Pages
 {
     partial class StronaPrzedmiotu
     {
+        
        /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -31,21 +33,21 @@ namespace wypozyczalnia_produkcja.Pages
         /// </summary>
             private void InitializeComponent(/*PrzedmiotModel przedmiot*/)
         {
-            this.buttonCofnij = new System.Windows.Forms.Button();
+            this.buttonDodaj = new System.Windows.Forms.Button();
             this.labelNazwaPrzedmiotu = new System.Windows.Forms.Label();
             this.labelNickWlasciciela = new System.Windows.Forms.Label();
             this.labelKategoria = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // buttonCofnij
+            // buttonDodaj
             // 
-            this.buttonCofnij.Location = new System.Drawing.Point(50, 305);
-            this.buttonCofnij.Name = "buttonCofnij";
-            this.buttonCofnij.Size = new System.Drawing.Size(146, 24);
-            this.buttonCofnij.TabIndex = 0;
-            this.buttonCofnij.Text = "Wróć do wyszukiwarki";
-            this.buttonCofnij.UseVisualStyleBackColor = true;
-            this.buttonCofnij.Click += new System.EventHandler(this.buttonCofnij_Click);
+            this.buttonDodaj.Location = new System.Drawing.Point(442, 306);
+            this.buttonDodaj.Name = "buttonDodaj";
+            this.buttonDodaj.Size = new System.Drawing.Size(146, 24);
+            this.buttonDodaj.TabIndex = 0;
+            this.buttonDodaj.Text = "Dodaj do koszyka";
+            this.buttonDodaj.UseVisualStyleBackColor = true;
+            this.buttonDodaj.Click += new System.EventHandler(this.buttonCofnij_Click);
             // 
             // labelNazwaPrzedmiotu
             // 
@@ -85,7 +87,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.Controls.Add(this.labelKategoria);
             this.Controls.Add(this.labelNickWlasciciela);
             this.Controls.Add(this.labelNazwaPrzedmiotu);
-            this.Controls.Add(this.buttonCofnij);
+            this.Controls.Add(this.buttonDodaj);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StronaPrzedmiotu";
             this.Text = "Agregat 3000";
@@ -96,7 +98,7 @@ namespace wypozyczalnia_produkcja.Pages
 
         #endregion
 
-        private System.Windows.Forms.Button buttonCofnij;
+        private System.Windows.Forms.Button buttonDodaj;
         private Label labelNazwaPrzedmiotu;
         private Label labelNickWlasciciela;
         private Label labelKategoria;
