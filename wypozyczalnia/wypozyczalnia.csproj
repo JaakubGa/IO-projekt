@@ -61,28 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DSanak\Logowanie.cs" />
-    <Compile Include="DSanak\LogowanieFormularz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DSanak\LogowanieFormularz.Designer.cs">
-      <DependentUpon>LogowanieFormularz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DSanak\Rejestracja\Rejestracja.cs" />
-    <Compile Include="DSanak\Rejestracja\RejestracjaFormularz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DSanak\Rejestracja\RejestracjaFormularz.Designer.cs">
-      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DSanak\LogowanieFormularz.resx">
-      <DependentUpon>LogowanieFormularz.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DSanak\Rejestracja\RejestracjaFormularz.resx">
-      <DependentUpon>RejestracjaFormularz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,15 +85,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="DSanak\grafiki\Logowanie\login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DSanak\grafiki\Logowanie\user_log.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Gasidlo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
