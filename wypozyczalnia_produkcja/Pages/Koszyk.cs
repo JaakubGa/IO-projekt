@@ -8,35 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wypozyczalnia_produkcja
+namespace wypozyczalnia_produkcja.Pages
 {
-    public partial class Form2 : Form
+    public partial class Koszyk : Form
     {
-        public Form2()
+        public Koszyk()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             button3.Text = "Musisz potwierdzić zakup";
@@ -45,4 +24,5 @@ namespace wypozyczalnia_produkcja
 
         }
     }
+
 }

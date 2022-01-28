@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Zamowienie.cs" />
+    <Compile Include="Pages\Koszyk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\Koszyk.Designer.cs">
+      <DependentUpon>Koszyk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LogowanieFormularz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Pages\Wyszukiwarka.Designer.cs">
       <DependentUpon>Wyszukiwarka.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Pages\Koszyk.resx">
+      <DependentUpon>Koszyk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\LogowanieFormularz.resx">
       <DependentUpon>LogowanieFormularz.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Pages\StronaPrzedmiotu.resx">
       <DependentUpon>StronaPrzedmiotu.cs</DependentUpon>
@@ -149,6 +159,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Grafiki\Koszyk\kosz.png" />
+    <Content Include="Grafiki\Koszyk\Logo.png" />
     <Content Include="Grafiki\Logowanie\login.png" />
     <Content Include="Grafiki\Logowanie\user_log.png" />
   </ItemGroup>

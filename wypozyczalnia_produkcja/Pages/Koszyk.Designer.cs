@@ -1,7 +1,7 @@
 ﻿
-namespace wypozyczalnia_produkcja
+namespace wypozyczalnia_produkcja.Pages
 {
-    partial class Form2
+    partial class Koszyk
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace wypozyczalnia_produkcja
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Koszyk));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -59,7 +59,6 @@ namespace wypozyczalnia_produkcja
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -95,7 +94,6 @@ namespace wypozyczalnia_produkcja
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -131,14 +129,12 @@ namespace wypozyczalnia_produkcja
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -161,7 +157,7 @@ namespace wypozyczalnia_produkcja
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // Form2
+            // Koszyk
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -178,7 +174,7 @@ namespace wypozyczalnia_produkcja
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "Koszyk";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
