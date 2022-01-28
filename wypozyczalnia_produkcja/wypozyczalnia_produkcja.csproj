@@ -148,18 +148,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Kuba\Form2.cs">
+    <Compile Include="Kuba\Koszyk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kuba\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Kuba\Koszyk.Designer.cs">
+      <DependentUpon>Koszyk.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sabina\Params\Params.cs" />
     <Compile Include="Sabina\trest.cs" />
-    <EmbeddedResource Include="Kuba\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Kuba\Koszyk.resx">
+      <DependentUpon>Koszyk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -188,7 +188,6 @@
   <ItemGroup>
     <Content Include="Kuba\Grafiki\kosz.png" />
     <Content Include="Kuba\Grafiki\koszyk.png" />
-    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
