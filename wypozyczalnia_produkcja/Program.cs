@@ -13,6 +13,7 @@ namespace wypozyczalnia_produkcja
         [STAThread]
         static void Main()
         {
+            Singleton.GetInstance().ButtonsIsVisible = false;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
