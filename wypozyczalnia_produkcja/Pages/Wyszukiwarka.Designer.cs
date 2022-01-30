@@ -38,6 +38,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonRejestracja = new System.Windows.Forms.Button();
             this.buttonZamowienia = new System.Windows.Forms.Button();
             this.buttonKoszyk = new System.Windows.Forms.Button();
+            this.listBoxWyszukiwanie = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // labelPoleWyszukiwania
@@ -54,11 +55,11 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             this.buttonWyszukaj.Location = new System.Drawing.Point(369, 63);
             this.buttonWyszukaj.Name = "buttonWyszukaj";
-            this.buttonWyszukaj.Size = new System.Drawing.Size(75, 23);
+            this.buttonWyszukaj.Size = new System.Drawing.Size(95, 23);
             this.buttonWyszukaj.TabIndex = 1;
             this.buttonWyszukaj.Text = "Wyszukaj";
             this.buttonWyszukaj.UseVisualStyleBackColor = true;
-            this.buttonWyszukaj.Click += new System.EventHandler(this.button1_Click);
+            this.buttonWyszukaj.Click += new System.EventHandler(this.buttonWyszukaj_Click);
             // 
             // buttonProfilUzytkownika
             // 
@@ -69,7 +70,6 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
-            this.buttonProfilUzytkownika.Visible = Singleton.GetInstance().ButtonsIsVisible;
             this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             // 
             // buttonLogowanie
@@ -101,7 +101,6 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonZamowienia.Text = "Moje zamówienia";
             this.buttonZamowienia.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonZamowienia.UseVisualStyleBackColor = true;
-            this.buttonZamowienia.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // buttonKoszyk
             // 
@@ -112,13 +111,21 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonKoszyk.Text = "Koszyk";
             this.buttonKoszyk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonKoszyk.UseVisualStyleBackColor = true;
-            this.buttonKoszyk.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            // 
+            // listBoxWyszukiwanie
+            // 
+            this.listBoxWyszukiwanie.FormattingEnabled = true;
+            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(23, 105);
+            this.listBoxWyszukiwanie.Name = "listBoxWyszukiwanie";
+            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(441, 238);
+            this.listBoxWyszukiwanie.TabIndex = 7;
             // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 366);
+            this.Controls.Add(this.listBoxWyszukiwanie);
             this.Controls.Add(this.buttonKoszyk);
             this.Controls.Add(this.buttonZamowienia);
             this.Controls.Add(this.buttonRejestracja);
@@ -143,5 +150,6 @@ namespace wypozyczalnia_produkcja.Pages
         private System.Windows.Forms.Button buttonRejestracja;
         private System.Windows.Forms.Button buttonZamowienia;
         private System.Windows.Forms.Button buttonKoszyk;
+        private System.Windows.Forms.ListBox listBoxWyszukiwanie;
     }
 }

@@ -10,7 +10,7 @@ namespace wypozyczalnia_produkcja.Pages
         public StronaPrzedmiotu(int id)
         {
             Sprzet przedmiot = new Sprzet(id);
-            InitializeComponent(/*przedmiot*/);
+            InitializeComponent(przedmiot);
         }
 
         private void StronaPrzedmiotu_Load(object sender, EventArgs e)
