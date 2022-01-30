@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.box_rejestracja = new System.Windows.Forms.GroupBox();
+            this.apartment_number = new System.Windows.Forms.Label();
             this.post_code_txt = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.post_code = new System.Windows.Forms.Label();
@@ -63,7 +64,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.apartment_number = new System.Windows.Forms.Label();
             this.box_rejestracja.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +113,19 @@
             this.box_rejestracja.TabStop = false;
             this.box_rejestracja.Enter += new System.EventHandler(this.box_rejestracja_Enter);
             // 
+            // apartment_number
+            // 
+            this.apartment_number.BackColor = System.Drawing.Color.SteelBlue;
+            this.apartment_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.apartment_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.apartment_number.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.apartment_number.Location = new System.Drawing.Point(487, 293);
+            this.apartment_number.Name = "apartment_number";
+            this.apartment_number.Size = new System.Drawing.Size(111, 36);
+            this.apartment_number.TabIndex = 78;
+            this.apartment_number.Text = "NR. MIESZKANIA";
+            this.apartment_number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // post_code_txt
             // 
             this.post_code_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -137,11 +150,11 @@
             this.post_code.BackColor = System.Drawing.Color.SteelBlue;
             this.post_code.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.post_code.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.post_code.Location = new System.Drawing.Point(487, 357);
+            this.post_code.Location = new System.Drawing.Point(487, 350);
             this.post_code.Name = "post_code";
-            this.post_code.Size = new System.Drawing.Size(111, 31);
+            this.post_code.Size = new System.Drawing.Size(111, 40);
             this.post_code.TabIndex = 75;
-            this.post_code.Text = "POST-CODE";
+            this.post_code.Text = "KOD POCZTOWY";
             this.post_code.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.post_code.Click += new System.EventHandler(this.post_code_Click);
             // 
@@ -213,7 +226,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 31);
             this.label8.TabIndex = 69;
-            this.label8.Text = "NUMBER";
+            this.label8.Text = "NR. DOMU";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // number_txt
@@ -244,7 +257,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 31);
             this.label9.TabIndex = 66;
-            this.label9.Text = "STREET";
+            this.label9.Text = "ULICA";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // street_txt
@@ -275,7 +288,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(111, 31);
             this.label10.TabIndex = 63;
-            this.label10.Text = "CITY";
+            this.label10.Text = "MIASTO";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // city_txt
@@ -337,7 +350,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 31);
             this.label7.TabIndex = 57;
-            this.label7.Text = "PASSWORD";
+            this.label7.Text = "HASŁO";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // password_txt
@@ -369,7 +382,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 31);
             this.label6.TabIndex = 54;
-            this.label6.Text = "USER NAME";
+            this.label6.Text = "NICK";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // login_txt
@@ -400,7 +413,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 31);
             this.label5.TabIndex = 51;
-            this.label5.Text = "LAST NAME";
+            this.label5.Text = "NAZWISKO";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lastname_txt
@@ -431,7 +444,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 31);
             this.label4.TabIndex = 48;
-            this.label4.Text = "FIRST NAME";
+            this.label4.Text = "IMIĘ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // firstname_txt
@@ -465,18 +478,6 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Create account";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // apartment_number
-            // 
-            this.apartment_number.BackColor = System.Drawing.Color.SteelBlue;
-            this.apartment_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.apartment_number.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.apartment_number.Location = new System.Drawing.Point(487, 297);
-            this.apartment_number.Name = "apartment_number";
-            this.apartment_number.Size = new System.Drawing.Size(111, 31);
-            this.apartment_number.TabIndex = 78;
-            this.apartment_number.Text = "Apart. nubmer";
-            this.apartment_number.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Rejestracja
             // 
