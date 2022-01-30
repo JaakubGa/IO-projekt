@@ -14,6 +14,7 @@ namespace wypozyczalnia_produkcja
         static void Main()
         {
             Singleton.GetInstance().ButtonsIsVisible = false;
+            Singleton.UzupelnijListeKategori();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Wyszukiwarka wyszukiwarka = new Wyszukiwarka();

@@ -31,6 +31,7 @@ namespace wypozyczalnia_produkcja.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelPoleWyszukiwania = new System.Windows.Forms.Label();
             this.buttonWyszukaj = new System.Windows.Forms.Button();
             this.buttonProfilUzytkownika = new System.Windows.Forms.Button();
@@ -39,7 +40,16 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonZamowienia = new System.Windows.Forms.Button();
             this.buttonKoszyk = new System.Windows.Forms.Button();
             this.listBoxWyszukiwanie = new System.Windows.Forms.ListBox();
+            this.checkedListBoxKategorie = new System.Windows.Forms.CheckedListBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.buttonWyczyscKategorie = new System.Windows.Forms.Button();
             this.SuspendLayout();
+
+            //wpisanie kategori
+            foreach (var kategoria in Singleton.GetInstance().ListaKategorii)
+            {
+                this.checkedListBoxKategorie.Items.Add(kategoria);
+            }
             // 
             // labelPoleWyszukiwania
             // 
@@ -47,15 +57,15 @@ namespace wypozyczalnia_produkcja.Pages
             this.labelPoleWyszukiwania.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelPoleWyszukiwania.Location = new System.Drawing.Point(23, 63);
             this.labelPoleWyszukiwania.Name = "labelPoleWyszukiwania";
-            this.labelPoleWyszukiwania.Size = new System.Drawing.Size(340, 23);
+            this.labelPoleWyszukiwania.Size = new System.Drawing.Size(357, 23);
             this.labelPoleWyszukiwania.TabIndex = 0;
             this.labelPoleWyszukiwania.Text = "Wpisz czego szukasz";
             // 
             // buttonWyszukaj
             // 
-            this.buttonWyszukaj.Location = new System.Drawing.Point(369, 63);
+            this.buttonWyszukaj.Location = new System.Drawing.Point(386, 63);
             this.buttonWyszukaj.Name = "buttonWyszukaj";
-            this.buttonWyszukaj.Size = new System.Drawing.Size(95, 23);
+            this.buttonWyszukaj.Size = new System.Drawing.Size(100, 23);
             this.buttonWyszukaj.TabIndex = 1;
             this.buttonWyszukaj.Text = "Wyszukaj";
             this.buttonWyszukaj.UseVisualStyleBackColor = true;
@@ -115,16 +125,41 @@ namespace wypozyczalnia_produkcja.Pages
             // listBoxWyszukiwanie
             // 
             this.listBoxWyszukiwanie.FormattingEnabled = true;
-            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(23, 105);
+            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(23, 98);
             this.listBoxWyszukiwanie.Name = "listBoxWyszukiwanie";
-            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(441, 238);
+            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(463, 251);
             this.listBoxWyszukiwanie.TabIndex = 7;
+            // 
+            // checkedListBoxKategorie
+            // 
+            this.checkedListBoxKategorie.FormattingEnabled = true;
+            this.checkedListBoxKategorie.Location = new System.Drawing.Point(507, 63);
+            this.checkedListBoxKategorie.Name = "checkedListBoxKategorie";
+            this.checkedListBoxKategorie.Size = new System.Drawing.Size(115, 259);
+            this.checkedListBoxKategorie.TabIndex = 9;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Text = "Kategorie";
+            // 
+            // buttonWyczyscKategorie
+            // 
+            this.buttonWyczyscKategorie.Location = new System.Drawing.Point(507, 328);
+            this.buttonWyczyscKategorie.Name = "buttonWyczyscKategorie";
+            this.buttonWyczyscKategorie.Size = new System.Drawing.Size(115, 23);
+            this.buttonWyczyscKategorie.TabIndex = 12;
+            this.buttonWyczyscKategorie.Text = "Wyczysc Kategorie";
+            this.buttonWyczyscKategorie.UseVisualStyleBackColor = true;
             // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 366);
+            this.Controls.Add(this.buttonWyczyscKategorie);
+            this.Controls.Add(this.checkedListBoxKategorie);
             this.Controls.Add(this.listBoxWyszukiwanie);
             this.Controls.Add(this.buttonKoszyk);
             this.Controls.Add(this.buttonZamowienia);
@@ -151,5 +186,8 @@ namespace wypozyczalnia_produkcja.Pages
         private System.Windows.Forms.Button buttonZamowienia;
         private System.Windows.Forms.Button buttonKoszyk;
         private System.Windows.Forms.ListBox listBoxWyszukiwanie;
+        private System.Windows.Forms.CheckedListBox checkedListBoxKategorie;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button buttonWyczyscKategorie;
     }
 }
