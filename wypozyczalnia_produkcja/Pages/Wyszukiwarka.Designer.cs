@@ -29,8 +29,8 @@ namespace wypozyczalnia_produkcja.Pages
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelPoleWyszukiwania = new System.Windows.Forms.Label();
+            this.buttonWyszukaj = new System.Windows.Forms.Button();
             this.buttonProfilUzytkownika = new System.Windows.Forms.Button();
             this.buttonLogowanie = new System.Windows.Forms.Button();
             this.buttonRejestracja = new System.Windows.Forms.Button();
@@ -38,25 +38,25 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonKoszyk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelPoleWyszukiwania
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(23, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(340, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Wpisz czego szukasz";
+            this.labelPoleWyszukiwania.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelPoleWyszukiwania.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelPoleWyszukiwania.Location = new System.Drawing.Point(23, 63);
+            this.labelPoleWyszukiwania.Name = "labelPoleWyszukiwania";
+            this.labelPoleWyszukiwania.Size = new System.Drawing.Size(340, 23);
+            this.labelPoleWyszukiwania.TabIndex = 0;
+            this.labelPoleWyszukiwania.Text = "Wpisz czego szukasz";
             // 
-            // button1
+            // buttonWyszukaj
             // 
-            this.button1.Location = new System.Drawing.Point(369, 63);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Wyszukaj";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonWyszukaj.Location = new System.Drawing.Point(369, 63);
+            this.buttonWyszukaj.Name = "buttonWyszukaj";
+            this.buttonWyszukaj.Size = new System.Drawing.Size(75, 23);
+            this.buttonWyszukaj.TabIndex = 1;
+            this.buttonWyszukaj.Text = "Wyszukaj";
+            this.buttonWyszukaj.UseVisualStyleBackColor = true;
+            this.buttonWyszukaj.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonProfilUzytkownika
             // 
@@ -67,8 +67,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
-            this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             this.buttonProfilUzytkownika.Visible = false;
+            this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             // 
             // buttonLogowanie
             // 
@@ -122,19 +122,20 @@ namespace wypozyczalnia_produkcja.Pages
             this.Controls.Add(this.buttonRejestracja);
             this.Controls.Add(this.buttonLogowanie);
             this.Controls.Add(this.buttonProfilUzytkownika);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonWyszukaj);
+            this.Controls.Add(this.labelPoleWyszukiwania);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Wyszukiwarka";
             this.Text = "Wypożyczalnia narzędzi";
             this.Load += new System.EventHandler(this.Wyszukiwarka_Load);
             this.ResumeLayout(false);
+
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelPoleWyszukiwania;
+        private System.Windows.Forms.Button buttonWyszukaj;
         private System.Windows.Forms.Button buttonProfilUzytkownika;
         private System.Windows.Forms.Button buttonLogowanie;
         private System.Windows.Forms.Button buttonRejestracja;

@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using wypozyczalnia_produkcja.Models;
+using wypozyczalnia_produkcja.Params;
 
 //sabina
 namespace wypozyczalnia_produkcja.Pages
