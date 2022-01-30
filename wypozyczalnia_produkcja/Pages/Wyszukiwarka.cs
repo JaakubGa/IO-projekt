@@ -16,6 +16,9 @@ namespace wypozyczalnia_produkcja.Pages
         private void Wyszukiwarka_Load(object sender, EventArgs e)
         {
             //wpisanie kategori
+
+            Singleton.UzupelnijListeKategori();
+            Singleton.GetInstance().ButtonsIsVisible = false;
             foreach (var kategoria in Singleton.GetInstance().ListaKategorii)
             {
                 this.checkedListBoxKategorie.Items.Add(kategoria);
@@ -31,6 +34,10 @@ namespace wypozyczalnia_produkcja.Pages
             {
                 Sprzet sprzet = new Sprzet(idSprzetu);
                 listBoxWyszukiwanie.Items.Add(sprzet.ToString());
+            }
+            if(listBoxWyszukiwanie.Items.Count == 0)
+            {
+                //brak wynikow
             }
         }
 
