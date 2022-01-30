@@ -1,6 +1,8 @@
 ﻿//hubert
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using wypozyczalnia.DSanak;
+using wypozyczalnia.DSanak.Rejestracja;
 
 namespace wypozyczalnia_produkcja.Params
 {
@@ -13,6 +15,9 @@ namespace wypozyczalnia_produkcja.Params
         public List<int> ListaWyszukiwania; 
         public List<string> ListaKategorii;
         public string WyszukajTekst;
+        public LogowanieFormularz logowanie = new LogowanieFormularz();
+        public Rejestracja rejestracja = new Rejestracja();
+
         private Singleton() { }
 
         private static Singleton _instance;

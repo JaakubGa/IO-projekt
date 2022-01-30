@@ -14,7 +14,7 @@ namespace wypozyczalnia.DSanak
             InitializeComponent();
         }
 
-        public Rejestracja.Rejestracja rejestracja = new Rejestracja.Rejestracja();
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -23,10 +23,7 @@ namespace wypozyczalnia.DSanak
             try
 
             {
-                //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;
-                //Integrated Security=True;Connect Timeout=30;Encrypt=False;
-                //TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-
+           
                 SqlConnection con = new SqlConnection(Connect.StringConnection);
 
                 con.Open();

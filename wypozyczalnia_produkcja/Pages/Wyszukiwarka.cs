@@ -12,8 +12,7 @@ namespace wypozyczalnia_produkcja.Pages
    
     public partial class Wyszukiwarka : Form
     {
-        public LogowanieFormularz logowanie = new LogowanieFormularz();
-        public Rejestracja rejestracja = new Rejestracja();
+        
         
         public Wyszukiwarka()
         {
@@ -49,12 +48,12 @@ namespace wypozyczalnia_produkcja.Pages
 
         private void buttonLogowanie_Click(object sender, EventArgs e)
         {
-            logowanie.Show();
+            Singleton.GetInstance().logowanie.Show();
         }
 
         private void buttonRejestracja_Click(object sender, EventArgs e)
         {
-            rejestracja.Show();
+            Singleton.GetInstance().rejestracja.Show();
         }
     }
 }
