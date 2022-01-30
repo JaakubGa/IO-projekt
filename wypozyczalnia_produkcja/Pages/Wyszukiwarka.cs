@@ -15,11 +15,16 @@ namespace wypozyczalnia_produkcja.Pages
 
         private void Wyszukiwarka_Load(object sender, EventArgs e)
         {
-
+            //wpisanie kategori
+            foreach (var kategoria in Singleton.GetInstance().ListaKategorii)
+            {
+                this.checkedListBoxKategorie.Items.Add(kategoria);
+            }
         }
 
         private void buttonWyszukaj_Click(object sender, EventArgs e)
         {
+            Singleton.GetInstance().WyszukajTekst = textBoxWyszukiwarka.Text;
             Singleton.UzupelnijListeWyszukiwania();
             listBoxWyszukiwanie.Items.Clear();
             foreach (var idSprzetu in Singleton.GetInstance().ListaWyszukiwania)

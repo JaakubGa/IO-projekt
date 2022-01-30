@@ -32,7 +32,6 @@ namespace wypozyczalnia_produkcja.Pages
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.labelPoleWyszukiwania = new System.Windows.Forms.Label();
             this.buttonWyszukaj = new System.Windows.Forms.Button();
             this.buttonProfilUzytkownika = new System.Windows.Forms.Button();
             this.buttonLogowanie = new System.Windows.Forms.Button();
@@ -43,23 +42,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.checkedListBoxKategorie = new System.Windows.Forms.CheckedListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.buttonWyczyscKategorie = new System.Windows.Forms.Button();
+            this.textBoxWyszukiwarka = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-
-            //wpisanie kategori
-            foreach (var kategoria in Singleton.GetInstance().ListaKategorii)
-            {
-                this.checkedListBoxKategorie.Items.Add(kategoria);
-            }
-            // 
-            // labelPoleWyszukiwania
-            // 
-            this.labelPoleWyszukiwania.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelPoleWyszukiwania.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelPoleWyszukiwania.Location = new System.Drawing.Point(23, 63);
-            this.labelPoleWyszukiwania.Name = "labelPoleWyszukiwania";
-            this.labelPoleWyszukiwania.Size = new System.Drawing.Size(357, 23);
-            this.labelPoleWyszukiwania.TabIndex = 0;
-            this.labelPoleWyszukiwania.Text = "Wpisz czego szukasz";
             // 
             // buttonWyszukaj
             // 
@@ -142,7 +126,6 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip1.Text = "Kategorie";
             // 
             // buttonWyczyscKategorie
             // 
@@ -153,11 +136,20 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonWyczyscKategorie.Text = "Wyczysc Kategorie";
             this.buttonWyczyscKategorie.UseVisualStyleBackColor = true;
             // 
+            // textBoxWyszukiwarka
+            // 
+            this.textBoxWyszukiwarka.Location = new System.Drawing.Point(23, 63);
+            this.textBoxWyszukiwarka.Name = "textBoxWyszukiwarka";
+            this.textBoxWyszukiwarka.Size = new System.Drawing.Size(357, 20);
+            this.textBoxWyszukiwarka.TabIndex = 13;
+            this.textBoxWyszukiwarka.Text = "Wyszukaj czego szukasz";
+            // 
             // Wyszukiwarka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 366);
+            this.Controls.Add(this.textBoxWyszukiwarka);
             this.Controls.Add(this.buttonWyczyscKategorie);
             this.Controls.Add(this.checkedListBoxKategorie);
             this.Controls.Add(this.listBoxWyszukiwanie);
@@ -167,18 +159,16 @@ namespace wypozyczalnia_produkcja.Pages
             this.Controls.Add(this.buttonLogowanie);
             this.Controls.Add(this.buttonProfilUzytkownika);
             this.Controls.Add(this.buttonWyszukaj);
-            this.Controls.Add(this.labelPoleWyszukiwania);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Wyszukiwarka";
             this.Text = "Wypożyczalnia narzędzi";
             this.Load += new System.EventHandler(this.Wyszukiwarka_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelPoleWyszukiwania;
         private System.Windows.Forms.Button buttonWyszukaj;
         private System.Windows.Forms.Button buttonProfilUzytkownika;
         private System.Windows.Forms.Button buttonLogowanie;
@@ -189,5 +179,6 @@ namespace wypozyczalnia_produkcja.Pages
         private System.Windows.Forms.CheckedListBox checkedListBoxKategorie;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button buttonWyczyscKategorie;
+        private System.Windows.Forms.TextBox textBoxWyszukiwarka;
     }
 }
