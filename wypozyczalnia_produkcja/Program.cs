@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Pages;
+using wypozyczalnia_produkcja.Params;
 
 namespace wypozyczalnia_produkcja
 {
@@ -12,10 +13,13 @@ namespace wypozyczalnia_produkcja
         [STAThread]
         static void Main()
         {
+            Singleton.GetInstance().ButtonsIsVisible = false;
+            Singleton.UzupelnijListeKategori();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
             Application.Run(wyszukiwarka);
+
         }
     }
 }

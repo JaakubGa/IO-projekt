@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using wypozyczalnia_produkcja.Models;
+using wypozyczalnia_produkcja.Params;
 
 //sabina
 namespace wypozyczalnia_produkcja.Pages
@@ -31,7 +32,7 @@ namespace wypozyczalnia_produkcja.Pages
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-            private void InitializeComponent(/*PrzedmiotModel przedmiot*/)
+            private void InitializeComponent(Sprzet przedmiot)
         {
             this.buttonDodaj = new System.Windows.Forms.Button();
             this.labelNazwaPrzedmiotu = new System.Windows.Forms.Label();
@@ -57,7 +58,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.labelNazwaPrzedmiotu.Name = "labelNazwaPrzedmiotu";
             this.labelNazwaPrzedmiotu.Size = new System.Drawing.Size(405, 22);
             this.labelNazwaPrzedmiotu.TabIndex = 1;
-            this.labelNazwaPrzedmiotu.Text = "Agregat 3000";
+            this.labelNazwaPrzedmiotu.Text = przedmiot.Nazwa;
             // 
             // labelNickWlasciciela
             // 
@@ -77,7 +78,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.labelKategoria.Name = "labelKategoria";
             this.labelKategoria.Size = new System.Drawing.Size(405, 22);
             this.labelKategoria.TabIndex = 3;
-            this.labelKategoria.Text = "Agregat 3000";
+            this.labelKategoria.Text = przedmiot.Kategoria;
             // 
             // StronaPrzedmiotu
             // 

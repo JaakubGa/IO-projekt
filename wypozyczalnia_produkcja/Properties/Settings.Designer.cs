@@ -33,5 +33,16 @@ namespace wypozyczalnia_produkcja.Properties {
                 return ((string)(this["WypozyczalniaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-J9VF8D6\\HUBERT;Initial Catalog=Wypozyczalnia;Integrated Secur" +
+            "ity=True")]
+        public string WypozyczalniaConnectionString1 {
+            get {
+                return ((string)(this["WypozyczalniaConnectionString1"]));
+            }
+        }
     }
 }

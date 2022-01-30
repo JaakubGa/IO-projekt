@@ -13,7 +13,6 @@ C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozy
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.AssemblyReference.cache
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.ProfilUzytkownika.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Properties.Resources.resources
-C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Sabina.Pages.StronaPrzedmiotu.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Wyszukiwarka.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.GenerateResource.cache
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CoreCompileInputs.cache
@@ -22,3 +21,7 @@ C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozy
 D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.ProfilUzytkownika.resources
 D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources
 D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Wyszukiwarka.resources
+C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Koszyk.resources
+C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
+C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
+C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources

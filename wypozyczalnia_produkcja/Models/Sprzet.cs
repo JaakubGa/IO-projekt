@@ -54,12 +54,16 @@ namespace wypozyczalnia_produkcja.Models
                 //wpisanie danych z bazy
                 while (reader.Read())
                 {
-                    Kategoria = (string)reader[0];
+                    Kategoria = reader[0].ToString();
                 }
 
                 reader.Close();
                 Connection.Close();
             }
+        }
+        public override string ToString()
+        {
+            return $"{Nazwa} ({Kategoria}) \t {Cena}";
         }
     }
 }
