@@ -2,6 +2,8 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using wypozyczalnia_produkcja.Params;
+
 
 namespace wypozyczalnia.DSanak
 {
@@ -24,9 +26,8 @@ namespace wypozyczalnia.DSanak
                 //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;
                 //Integrated Security=True;Connect Timeout=30;Encrypt=False;
                 //TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-                String str = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Wypozyczalnia;Integrated Security=True;Connect Timeout=30;Encrypt=False;" +
-                    "TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-                SqlConnection con = new SqlConnection(str);
+
+                SqlConnection con = new SqlConnection(Connect.StringConnection);
 
                 con.Open();
 
@@ -39,7 +40,8 @@ namespace wypozyczalnia.DSanak
                 {
                     MessageBox.Show("Brawo, udało Ci się poprawnie zalogować");
                     this.Hide();
-                    rejestracja.Show();
+                    Singleton.GetInstance().ButtonsIsVisible = true;
+
 
                 }
                 else
