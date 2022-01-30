@@ -12,8 +12,6 @@ namespace wypozyczalnia_produkcja.Pages
    
     public partial class Wyszukiwarka : Form
     {
-        
-        
         public Wyszukiwarka()
         {
             InitializeComponent();

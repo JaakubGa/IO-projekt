@@ -8,15 +8,16 @@ namespace wypozyczalnia_produkcja.Params
 {
     public sealed class Singleton
     {
-        public int IdZalogowanego;
-        public bool ButtonsIsVisible;
         public List<int> ListaKoszyk; 
         //do wyszukiwania
         public List<int> ListaWyszukiwania; 
         public List<string> ListaKategorii;
         public string WyszukajTekst;
+        //do logowania
         public LogowanieFormularz logowanie = new LogowanieFormularz();
         public Rejestracja rejestracja = new Rejestracja();
+        public int IdZalogowanego;
+        public bool ButtonsIsVisible;
 
         private Singleton() { }
 

@@ -67,6 +67,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
             this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
+            this.buttonProfilUzytkownika.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // buttonLogowanie
             // 
@@ -102,6 +103,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonZamowienia.Text = "Moje zamówienia";
             this.buttonZamowienia.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonZamowienia.UseVisualStyleBackColor = true;
+            this.buttonZamowienia.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // buttonKoszyk
             // 
@@ -113,6 +115,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonKoszyk.Text = "Koszyk";
             this.buttonKoszyk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonKoszyk.UseVisualStyleBackColor = true;
+            this.buttonKoszyk.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // listBoxWyszukiwanie
             // 
