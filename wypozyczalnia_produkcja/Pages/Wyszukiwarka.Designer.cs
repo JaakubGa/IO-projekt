@@ -47,9 +47,10 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             // buttonWyszukaj
             // 
-            this.buttonWyszukaj.Location = new System.Drawing.Point(386, 63);
+            this.buttonWyszukaj.Location = new System.Drawing.Point(515, 78);
+            this.buttonWyszukaj.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonWyszukaj.Name = "buttonWyszukaj";
-            this.buttonWyszukaj.Size = new System.Drawing.Size(100, 23);
+            this.buttonWyszukaj.Size = new System.Drawing.Size(133, 28);
             this.buttonWyszukaj.TabIndex = 1;
             this.buttonWyszukaj.Text = "Wyszukaj";
             this.buttonWyszukaj.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             // buttonProfilUzytkownika
             // 
-            this.buttonProfilUzytkownika.Location = new System.Drawing.Point(23, 12);
+            this.buttonProfilUzytkownika.Location = new System.Drawing.Point(31, 15);
+            this.buttonProfilUzytkownika.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonProfilUzytkownika.Name = "buttonProfilUzytkownika";
-            this.buttonProfilUzytkownika.Size = new System.Drawing.Size(115, 23);
+            this.buttonProfilUzytkownika.Size = new System.Drawing.Size(153, 28);
             this.buttonProfilUzytkownika.TabIndex = 2;
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,29 +70,34 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             // buttonLogowanie
             // 
-            this.buttonLogowanie.Location = new System.Drawing.Point(386, 12);
+            this.buttonLogowanie.Location = new System.Drawing.Point(515, 15);
+            this.buttonLogowanie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonLogowanie.Name = "buttonLogowanie";
-            this.buttonLogowanie.Size = new System.Drawing.Size(115, 23);
+            this.buttonLogowanie.Size = new System.Drawing.Size(153, 28);
             this.buttonLogowanie.TabIndex = 3;
             this.buttonLogowanie.Text = "Zaloguj się";
             this.buttonLogowanie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonLogowanie.UseVisualStyleBackColor = true;
+            this.buttonLogowanie.Click += new System.EventHandler(this.buttonLogowanie_Click);
             // 
             // buttonRejestracja
             // 
-            this.buttonRejestracja.Location = new System.Drawing.Point(507, 12);
+            this.buttonRejestracja.Location = new System.Drawing.Point(676, 15);
+            this.buttonRejestracja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRejestracja.Name = "buttonRejestracja";
-            this.buttonRejestracja.Size = new System.Drawing.Size(115, 23);
+            this.buttonRejestracja.Size = new System.Drawing.Size(153, 28);
             this.buttonRejestracja.TabIndex = 4;
             this.buttonRejestracja.Text = "Zarejestruj się";
             this.buttonRejestracja.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonRejestracja.UseVisualStyleBackColor = true;
+            this.buttonRejestracja.Click += new System.EventHandler(this.buttonRejestracja_Click);
             // 
             // buttonZamowienia
             // 
-            this.buttonZamowienia.Location = new System.Drawing.Point(144, 12);
+            this.buttonZamowienia.Location = new System.Drawing.Point(192, 15);
+            this.buttonZamowienia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonZamowienia.Name = "buttonZamowienia";
-            this.buttonZamowienia.Size = new System.Drawing.Size(115, 23);
+            this.buttonZamowienia.Size = new System.Drawing.Size(153, 28);
             this.buttonZamowienia.TabIndex = 5;
             this.buttonZamowienia.Text = "Moje zamówienia";
             this.buttonZamowienia.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,9 +105,10 @@ namespace wypozyczalnia_produkcja.Pages
             // 
             // buttonKoszyk
             // 
-            this.buttonKoszyk.Location = new System.Drawing.Point(265, 12);
+            this.buttonKoszyk.Location = new System.Drawing.Point(353, 15);
+            this.buttonKoszyk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonKoszyk.Name = "buttonKoszyk";
-            this.buttonKoszyk.Size = new System.Drawing.Size(115, 23);
+            this.buttonKoszyk.Size = new System.Drawing.Size(153, 28);
             this.buttonKoszyk.TabIndex = 6;
             this.buttonKoszyk.Text = "Koszyk";
             this.buttonKoszyk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -109,46 +117,52 @@ namespace wypozyczalnia_produkcja.Pages
             // listBoxWyszukiwanie
             // 
             this.listBoxWyszukiwanie.FormattingEnabled = true;
-            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(23, 98);
+            this.listBoxWyszukiwanie.ItemHeight = 16;
+            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(31, 121);
+            this.listBoxWyszukiwanie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxWyszukiwanie.Name = "listBoxWyszukiwanie";
-            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(463, 251);
+            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(616, 308);
             this.listBoxWyszukiwanie.TabIndex = 7;
             // 
             // checkedListBoxKategorie
             // 
             this.checkedListBoxKategorie.FormattingEnabled = true;
-            this.checkedListBoxKategorie.Location = new System.Drawing.Point(507, 63);
+            this.checkedListBoxKategorie.Location = new System.Drawing.Point(676, 78);
+            this.checkedListBoxKategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBoxKategorie.Name = "checkedListBoxKategorie";
-            this.checkedListBoxKategorie.Size = new System.Drawing.Size(115, 259);
+            this.checkedListBoxKategorie.Size = new System.Drawing.Size(152, 310);
             this.checkedListBoxKategorie.TabIndex = 9;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // buttonWyczyscKategorie
             // 
-            this.buttonWyczyscKategorie.Location = new System.Drawing.Point(507, 328);
+            this.buttonWyczyscKategorie.Location = new System.Drawing.Point(676, 404);
+            this.buttonWyczyscKategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonWyczyscKategorie.Name = "buttonWyczyscKategorie";
-            this.buttonWyczyscKategorie.Size = new System.Drawing.Size(115, 23);
+            this.buttonWyczyscKategorie.Size = new System.Drawing.Size(153, 28);
             this.buttonWyczyscKategorie.TabIndex = 12;
             this.buttonWyczyscKategorie.Text = "Wyczysc Kategorie";
             this.buttonWyczyscKategorie.UseVisualStyleBackColor = true;
             // 
             // textBoxWyszukiwarka
             // 
-            this.textBoxWyszukiwarka.Location = new System.Drawing.Point(23, 63);
+            this.textBoxWyszukiwarka.Location = new System.Drawing.Point(31, 78);
+            this.textBoxWyszukiwarka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxWyszukiwarka.Name = "textBoxWyszukiwarka";
-            this.textBoxWyszukiwarka.Size = new System.Drawing.Size(357, 20);
+            this.textBoxWyszukiwarka.Size = new System.Drawing.Size(475, 22);
             this.textBoxWyszukiwarka.TabIndex = 13;
             this.textBoxWyszukiwarka.Text = "Wyszukaj czego szukasz";
             // 
             // Wyszukiwarka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 366);
+            this.ClientSize = new System.Drawing.Size(845, 450);
             this.Controls.Add(this.textBoxWyszukiwarka);
             this.Controls.Add(this.buttonWyczyscKategorie);
             this.Controls.Add(this.checkedListBoxKategorie);
@@ -159,7 +173,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.Controls.Add(this.buttonLogowanie);
             this.Controls.Add(this.buttonProfilUzytkownika);
             this.Controls.Add(this.buttonWyszukaj);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Wyszukiwarka";
             this.Text = "Wypożyczalnia narzędzi";
             this.Load += new System.EventHandler(this.Wyszukiwarka_Load);
