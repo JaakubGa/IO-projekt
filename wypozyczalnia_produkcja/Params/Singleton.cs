@@ -10,7 +10,7 @@ namespace wypozyczalnia_produkcja.Params
 {
     public sealed class Singleton
     {
-        public List<int> ListaKoszyk;
+        public List<int> ListaKoszyk = new List<int>();
         //do wyszukiwania
         public List<int> ListaWyszukiwania;
         public List<string> ListaKategorii;
