@@ -7,12 +7,20 @@ namespace wypozyczalnia_produkcja.Pages
 {
     public partial class StronaPrzedmiotu : Form
     {
+        //private
+        private Sprzet przedmiot;
+
+        //CTOR
+        public StronaPrzedmiotu()
+        {
+            InitializeComponent();
+        }
         public StronaPrzedmiotu(int id)
         {
-            Sprzet przedmiot = new Sprzet(id);
-            InitializeComponent(przedmiot);
+            przedmiot = new Sprzet(id);
         }
 
+        //metody
         private void StronaPrzedmiotu_Load(object sender, EventArgs e)
         {
 

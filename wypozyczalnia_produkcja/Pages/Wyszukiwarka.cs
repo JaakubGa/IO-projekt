@@ -87,8 +87,8 @@ namespace wypozyczalnia_produkcja.Pages
             int id = Int32.Parse(sb.ToString());
 
             //otwarcie strony przedmiotu
-            StronaPrzedmiotu stronaPrzedmiotu = new StronaPrzedmiotu(id);
-            stronaPrzedmiotu.Show();
+           /* StronaPrzedmiotu stronaPrzedmiotu = new StronaPrzedmiotu(id);
+            stronaPrzedmiotu.Show();*/
         }
     }
 }
