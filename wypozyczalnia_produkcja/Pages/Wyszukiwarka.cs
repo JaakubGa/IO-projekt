@@ -29,13 +29,8 @@ namespace wypozyczalnia_produkcja.Pages
         private void buttonWyszukaj_Click(object sender, EventArgs e)
         {
             Singleton.GetInstance().WyszukajTekst = textBoxWyszukiwarka.Text;
-            Singleton.UzupelnijListeWyszukiwania();
-            listBoxWyszukiwanie.Items.Clear();
-            foreach (var idSprzetu in Singleton.GetInstance().ListaWyszukiwania)
-            {
-                Sprzet sprzet = new Sprzet(idSprzetu);
-                listBoxWyszukiwanie.Items.Add(sprzet.ToString());
-            }
+            Singleton.UzupelnijListeWyszukiwania(this.checkedListBoxKategorie);
+            Wyswetl();
         }
 
         private void buttonProfilUzytkownika_Click(object sender, EventArgs e)
@@ -52,6 +47,30 @@ namespace wypozyczalnia_produkcja.Pages
         private void buttonRejestracja_Click(object sender, EventArgs e)
         {
             Singleton.GetInstance().rejestracja.Show();
+        }
+
+        private void checkedListBoxKategorie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.checkedListBoxKategorie.CheckedItems.Count == 0) return;
+            Singleton.UzupelnijListeWyszukiwania(this.checkedListBoxKategorie, false);
+            Wyswetl();
+        }
+        private void buttonWyczyscKategorie_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < this.checkedListBoxKategorie.Items.Count; i++)
+                this.checkedListBoxKategorie.SetItemCheckState(i, CheckState.Unchecked);
+            listBoxWyszukiwanie.Items.Clear();
+        }
+
+        //pomocnicze metody
+        private void Wyswetl()
+        {
+            listBoxWyszukiwanie.Items.Clear();
+            foreach (var idSprzetu in Singleton.GetInstance().ListaWyszukiwania)
+            {
+                Sprzet sprzet = new Sprzet(idSprzetu);
+                listBoxWyszukiwanie.Items.Add(sprzet.ToString());
+            }
         }
     }
 }
