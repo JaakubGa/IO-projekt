@@ -4,6 +4,8 @@ using wypozyczalnia_produkcja.Models;
 using wypozyczalnia_produkcja.Params;
 using wypozyczalnia.DSanak;
 using wypozyczalnia.DSanak.Rejestracja;
+using System.Text;
+using System.Linq;
 
 
 //sabina
@@ -71,6 +73,22 @@ namespace wypozyczalnia_produkcja.Pages
                 Sprzet sprzet = new Sprzet(idSprzetu);
                 listBoxWyszukiwanie.Items.Add(sprzet.ToString());
             }
+        }
+
+        private void listBoxWyszukiwanie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //wyciąganie id
+            string napis = sender.ToString();
+            StringBuilder sb = new StringBuilder(napis);
+            napis = sb.Remove(0, napis.IndexOf(':') + 1).ToString();
+            napis = sb.Remove(0, napis.IndexOf(':') + 1).ToString();
+            sb.Remove(napis.IndexOf('-'), napis.Length - napis.IndexOf('-'));
+            var s = sb.Length;
+            int id = Int32.Parse(sb.ToString());
+
+            //otwarcie strony przedmiotu
+            StronaPrzedmiotu stronaPrzedmiotu = new StronaPrzedmiotu(id);
+            stronaPrzedmiotu.Show();
         }
     }
 }

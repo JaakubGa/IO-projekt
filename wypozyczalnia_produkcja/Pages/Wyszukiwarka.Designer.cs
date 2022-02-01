@@ -126,6 +126,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.listBoxWyszukiwanie.Name = "listBoxWyszukiwanie";
             this.listBoxWyszukiwanie.Size = new System.Drawing.Size(616, 308);
             this.listBoxWyszukiwanie.TabIndex = 7;
+            this.listBoxWyszukiwanie.SelectedIndexChanged += new System.EventHandler(this.listBoxWyszukiwanie_SelectedIndexChanged);
             // 
             // checkedListBoxKategorie
             // 

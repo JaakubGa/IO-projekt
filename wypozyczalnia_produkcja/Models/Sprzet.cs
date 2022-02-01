@@ -63,7 +63,7 @@ namespace wypozyczalnia_produkcja.Models
         }
         public override string ToString()
         {
-            return $"{Nazwa} ({Kategoria}) \t {Cena}";
+            return $"{Id} \t- {Nazwa} ({Kategoria}) \t {Cena :c}";
         }
     }
 }
