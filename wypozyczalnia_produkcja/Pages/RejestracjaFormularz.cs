@@ -121,7 +121,7 @@ namespace wypozyczalnia.DSanak.Rejestracja
             DialogResult dialogResult = MessageBox.Show("Are you sure?", "What are you doing?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Hide();
             }
         }
 
