@@ -6,10 +6,15 @@ using wypozyczalnia_produkcja.Params;
 using wypozyczalnia_produkcja.Pages;
 
 
+
 namespace wypozyczalnia.DSanak
 {
+
+    
+
     public partial class LogowanieFormularz : Form
     {
+
         public LogowanieFormularz()
         {
             InitializeComponent();
@@ -19,6 +24,11 @@ namespace wypozyczalnia.DSanak
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Singleton.GetInstance().ButtonsIsVisible = true;
+
+            Singleton.GetInstance().wyszukiwarka.buttonKoszyk.Visible = true;
+            Singleton.GetInstance().wyszukiwarka.buttonProfilUzytkownika.Visible = true;
+            Singleton.GetInstance().wyszukiwarka.buttonZamowienia.Visible = true;
 
 
             try
@@ -37,6 +47,9 @@ namespace wypozyczalnia.DSanak
                 if (dtc.Rows[0][0].ToString() == "1")
                 {
                     MessageBox.Show($"Brawo, {usernametxt.Text} udało Ci się poprawnie zalogować");
+                   
+ 
+                    
 
                     SqlCommand command = new SqlCommand($"Select id_Uzytkownika from Uzytkownik where nick='{usernametxt.Text}';", con);
 
@@ -47,12 +60,12 @@ namespace wypozyczalnia.DSanak
                     {
                         Singleton.GetInstance().IdZalogowanego = (int)reader[0];
                     }
-                    Singleton.GetInstance().ButtonsIsVisible = true;
                     this.Hide();
 
                     con.Close();
                     reader.Close();
 
+                   
 
                    
 
