@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using wypozyczalnia.DSanak;
 using wypozyczalnia.DSanak.Rejestracja;
+using wypozyczalnia_produkcja.Pages;
 
 namespace wypozyczalnia_produkcja.Params
 {
@@ -16,11 +17,13 @@ namespace wypozyczalnia_produkcja.Params
         public List<string> ListaKategorii;
         public string WyszukajTekst;
         public List<string> ListaZaznaczonychKategorii;
+        public Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
         //do logowania
         public LogowanieFormularz logowanie = new LogowanieFormularz();
         public Rejestracja rejestracja = new Rejestracja();
         public int IdZalogowanego;
         public bool ButtonsIsVisible;
+        
 
         private Singleton() { }
 
@@ -33,6 +36,10 @@ namespace wypozyczalnia_produkcja.Params
             }
             return _instance;
         }
+
+       
+
+
         public static void UzupelnijListeWyszukiwania(CheckedListBox listaKategori, bool wyszukajPoTekscie = true)
         {
             //czyszczenie listy

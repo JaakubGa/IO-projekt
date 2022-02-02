@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using wypozyczalnia_produkcja.Params;
+using wypozyczalnia_produkcja.Pages;
 
 
 namespace wypozyczalnia.DSanak
@@ -14,7 +15,7 @@ namespace wypozyczalnia.DSanak
             InitializeComponent();
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -23,7 +24,7 @@ namespace wypozyczalnia.DSanak
             try
 
             {
-           
+
                 SqlConnection con = new SqlConnection(Connect.StringConnection);
 
                 con.Open();
@@ -35,9 +36,26 @@ namespace wypozyczalnia.DSanak
                 sda.Fill(dtc);
                 if (dtc.Rows[0][0].ToString() == "1")
                 {
-                    MessageBox.Show("Brawo, udało Ci się poprawnie zalogować");
-                    this.Hide();
+                    MessageBox.Show($"Brawo, {usernametxt.Text} udało Ci się poprawnie zalogować");
+
+                    SqlCommand command = new SqlCommand($"Select id_Uzytkownika from Uzytkownik where nick='{usernametxt.Text}';", con);
+
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    //rader = 0 zwraca id uzytkownika
+                    while (reader.Read())
+                    {
+                        Singleton.GetInstance().IdZalogowanego = (int)reader[0];
+                    }
                     Singleton.GetInstance().ButtonsIsVisible = true;
+                    this.Hide();
+
+                    con.Close();
+                    reader.Close();
+
+
+                   
+
 
 
                 }
