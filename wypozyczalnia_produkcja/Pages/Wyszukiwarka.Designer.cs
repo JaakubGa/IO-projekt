@@ -1,10 +1,12 @@
 ﻿//sabina
 using wypozyczalnia_produkcja.Params;
+using wypozyczalnia_produkcja.Pages;
 
 namespace wypozyczalnia_produkcja.Pages
 {
     partial class Wyszukiwarka
     {
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -66,7 +68,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
-            this.buttonProfilUzytkownika.Visible = false;
+            this.buttonProfilUzytkownika.Visible =false;// id zalogowanego przyjmuje INT a tu chce boola :(  Singleton.GetInstance().IdZalogowanego;
             this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             // 
             // buttonLogowanie
