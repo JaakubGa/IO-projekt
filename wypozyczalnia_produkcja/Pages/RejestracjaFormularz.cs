@@ -13,31 +13,6 @@ namespace wypozyczalnia.DSanak.Rejestracja
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Rejestracja_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e) //rejestracja_button
         {
 
@@ -84,7 +59,7 @@ namespace wypozyczalnia.DSanak.Rejestracja
                         }
                         catch (Exception eax)
                         {
-                            MessageBox.Show("Podany login/email już istnieje w bazie", eax.ToString());
+                            MessageBox.Show($"Error {eax}");
                         }
 
 

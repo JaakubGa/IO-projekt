@@ -68,7 +68,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
-            this.buttonProfilUzytkownika.Visible =false;// id zalogowanego przyjmuje INT a tu chce boola :(  Singleton.GetInstance().IdZalogowanego;
+            this.buttonProfilUzytkownika.Visible = Singleton.GetInstance().ButtonsIsVisible;
             this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             // 
             // buttonLogowanie
@@ -105,7 +105,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonZamowienia.Text = "Moje zamówienia";
             this.buttonZamowienia.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonZamowienia.UseVisualStyleBackColor = true;
-            this.buttonZamowienia.Visible = false;
+           this.buttonZamowienia.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // buttonKoszyk
             // 
@@ -117,7 +117,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonKoszyk.Text = "Koszyk";
             this.buttonKoszyk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonKoszyk.UseVisualStyleBackColor = true;
-            this.buttonKoszyk.Visible = false;
+            this.buttonKoszyk.Visible = Singleton.GetInstance().ButtonsIsVisible;
             // 
             // listBoxWyszukiwanie
             // 
