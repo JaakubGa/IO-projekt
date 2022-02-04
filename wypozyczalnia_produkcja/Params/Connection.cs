@@ -10,6 +10,6 @@ namespace wypozyczalnia_produkcja.Params
         //sanak
         public static string StringConnection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Wypozyczalnia;Integrated Security=True";
         //kuba
-        //public static string StringConnection = "Data Source=LAPTOP-Q6JBHJK9;Initial Catalog=Wypozyczalnia;Integrated Security=True";
+        //public static string StringConnection = "Data Source=DESKTOP-3U71H3I\lacos;Initial Catalog=Wypozyczalnia;Integrated Security=True";
     }
 }
