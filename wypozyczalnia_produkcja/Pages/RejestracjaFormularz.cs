@@ -27,12 +27,11 @@ namespace wypozyczalnia.DSanak.Rejestracja
                 DataTable dtc = new DataTable();
 
                 String czyDuplikat = "select Count(*) from Uzytkownik where nick= '" + login_txt.Text + "' and haslo= '" + password_txt.Text + "'";
-                String dodawanie = "INSERT INTO Uzytkownik(nick,haslo,imie,nazwisko,nr_telefonu,e_mail) " +
-                    "VALUES ('" + login_txt.Text + "', '" + password_txt.Text + "', '" + firstname_txt.Text + "', '" + lastname_txt.Text + "','" + city_txt.Text + "','" + street_txt.Text + "','" + number_txt.Text + "','" + email_txt.Text + "')";
+                String dodawanie = "INSERT INTO Uzytkownik(nick,haslo,imie,nazwisko,e_mail) " +
+                    "VALUES ('" + login_txt.Text + "', '" + password_txt.Text + "', '" + firstname_txt.Text + "', '" + lastname_txt.Text + "','" + email_txt.Text + "')";
 
                 string dodawanie_adresu = "INSERT INTO Adres(miasto,kod_pocztowy,ulica,numer_domu,numer_mieszkania) " +
                     "Values ('" + city_txt.Text + "','" + post_code_txt.Text + "','" + street_txt.Text + "','" + number_txt.Text + "',,'" + number_of_apart_txt.Text + "')";
-                string select = "Select *  from Urzytkownicy";
                 SqlCommand kwerenda1 = new SqlCommand(dodawanie, con);
                 SqlCommand kwerenda2 = new SqlCommand(dodawanie_adresu, con);
 
