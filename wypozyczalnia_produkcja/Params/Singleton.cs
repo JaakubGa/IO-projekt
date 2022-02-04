@@ -12,19 +12,28 @@ namespace wypozyczalnia_produkcja.Params
     public sealed class Singleton
     {
         public List<int> ListaKoszyk = new List<int>();
+
         //do wyszukiwania
         public List<int> ListaWyszukiwania;
         public List<string> ListaKategorii;
         public string WyszukajTekst;
         public List<string> ListaZaznaczonychKategorii;
-        public Wyszukiwarka wyszukiwarka = new Wyszukiwarka();
-        //do logowania
-        public LogowanieFormularz logowanie = new LogowanieFormularz();
-        public Rejestracja rejestracja = new Rejestracja();
-        public bool ButtonsIsVisible = false;
-        public int IdZalogowanego;
+        public Wyszukiwarka Wyszukiwarka;
 
-        
+        //do logowania
+        public LogowanieFormularz Logowanie = new LogowanieFormularz();
+        public Rejestracja Rejestracja = new Rejestracja();
+        public bool ButtonsIsVisible;
+        public int IdZalogowanego
+        {
+            get => IdZalogowanego;
+            set
+            {
+                Wyszukiwarka.IsVisible();
+            }
+        }
+
+
 
         private Singleton() { }
 
@@ -37,8 +46,8 @@ namespace wypozyczalnia_produkcja.Params
             }
             return _instance;
         }
-      
-        
+
+
 
         public static void UzupelnijListeWyszukiwania(CheckedListBox listaKategori, bool wyszukajPoTekscie = true)
         {

@@ -476,7 +476,6 @@
             this.label1.Size = new System.Drawing.Size(240, 45);
             this.label1.TabIndex = 44;
             this.label1.Text = "Nowe konto";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Rejestracja
             // 
@@ -487,7 +486,6 @@
             this.Name = "Rejestracja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rejestracja";
-            this.Load += new System.EventHandler(this.Rejestracja_Load);
             this.box_rejestracja.ResumeLayout(false);
             this.box_rejestracja.PerformLayout();
             this.ResumeLayout(false);

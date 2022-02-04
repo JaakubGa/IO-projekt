@@ -29,7 +29,12 @@ namespace wypozyczalnia_produkcja.Pages
         }
 
       
-
+        public void IsVisible()
+        {
+            this.buttonProfilUzytkownika.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            this.buttonZamowienia.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            this.buttonKoszyk.Visible = Singleton.GetInstance().ButtonsIsVisible;
+        }
         private void buttonWyszukaj_Click(object sender, EventArgs e)
         {
             Singleton.GetInstance().WyszukajTekst = textBoxWyszukiwarka.Text;
@@ -45,12 +50,12 @@ namespace wypozyczalnia_produkcja.Pages
 
         private void buttonLogowanie_Click(object sender, EventArgs e)
         {
-            Singleton.GetInstance().logowanie.Show();
+            Singleton.GetInstance().Logowanie.Show();
         }
 
         private void buttonRejestracja_Click(object sender, EventArgs e)
         {
-            Singleton.GetInstance().rejestracja.Show();
+            Singleton.GetInstance().Rejestracja.Show();
         }
 
         private void checkedListBoxKategorie_SelectedIndexChanged(object sender, EventArgs e)
