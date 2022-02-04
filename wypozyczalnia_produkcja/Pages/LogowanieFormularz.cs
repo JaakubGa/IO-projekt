@@ -9,9 +9,6 @@ using wypozyczalnia_produkcja.Pages;
 
 namespace wypozyczalnia.DSanak
 {
-
-    
-
     public partial class LogowanieFormularz : Form
     {
 
@@ -20,17 +17,9 @@ namespace wypozyczalnia.DSanak
             InitializeComponent();
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Singleton.GetInstance().ButtonsIsVisible = true;
-
-            Singleton.GetInstance().wyszukiwarka.buttonKoszyk.Visible = true;
-            Singleton.GetInstance().wyszukiwarka.buttonProfilUzytkownika.Visible = true;
-            Singleton.GetInstance().wyszukiwarka.buttonZamowienia.Visible = true;
-
-
+                   
             try
 
             {
@@ -47,10 +36,11 @@ namespace wypozyczalnia.DSanak
                 if (dtc.Rows[0][0].ToString() == "1")
                 {
                     MessageBox.Show($"Brawo, {usernametxt.Text} udało Ci się poprawnie zalogować");
-                   
- 
-                    
+                    Singleton.GetInstance().ButtonsIsVisible = true;
 
+                    
+                    
+                    
                     SqlCommand command = new SqlCommand($"Select id_Uzytkownika from Uzytkownik where nick='{usernametxt.Text}';", con);
 
                     SqlDataReader reader = command.ExecuteReader();
@@ -64,38 +54,19 @@ namespace wypozyczalnia.DSanak
 
                     con.Close();
                     reader.Close();
-
-                   
-
-                   
-
-
-
                 }
                 else
                 {
                     MessageBox.Show("Niestety, sprawdź swoje dane");
                 }
 
-
-
             }
             catch (Exception es)
-
             {
-
                 MessageBox.Show(es.Message);
-
-
-
             }
 
-
         }
-
-
-
-
 
         private void LogowanieFormularz_Load(object sender, EventArgs e)
         {

@@ -21,8 +21,9 @@ namespace wypozyczalnia_produkcja.Params
         //do logowania
         public LogowanieFormularz logowanie = new LogowanieFormularz();
         public Rejestracja rejestracja = new Rejestracja();
+        public bool ButtonsIsVisible = false;
         public int IdZalogowanego;
-        public bool ButtonsIsVisible;
+
         
 
         private Singleton() { }
@@ -36,9 +37,8 @@ namespace wypozyczalnia_produkcja.Params
             }
             return _instance;
         }
-
-       
-
+      
+        
 
         public static void UzupelnijListeWyszukiwania(CheckedListBox listaKategori, bool wyszukajPoTekscie = true)
         {

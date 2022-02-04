@@ -28,6 +28,8 @@ namespace wypozyczalnia_produkcja.Pages
             }
         }
 
+      
+
         private void buttonWyszukaj_Click(object sender, EventArgs e)
         {
             Singleton.GetInstance().WyszukajTekst = textBoxWyszukiwarka.Text;
