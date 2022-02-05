@@ -25,3 +25,20 @@ C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozy
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe.config
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.pdb
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\nunit.framework.dll
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\nunit.framework.xml
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Koszyk.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.ProfilUzytkownika.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Properties.Resources.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Wyszukiwarka.resources
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.GenerateResource.cache
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CoreCompileInputs.cache
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CopyComplete
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.exe
+D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.pdb

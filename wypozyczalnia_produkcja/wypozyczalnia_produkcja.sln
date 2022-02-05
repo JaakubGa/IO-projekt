@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wypozyczalnia_produkcja", "wypozyczalnia_produkcja.csproj", "{C670BC8A-45EA-4A53-847C-9673C34EA847}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WypozyczalniaUnitTest", "..\WypozyczalniaUnitTest\WypozyczalniaUnitTest.csproj", "{FD6DF84C-E059-4884-ACD2-5463C5FEF8FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C670BC8A-45EA-4A53-847C-9673C34EA847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C670BC8A-45EA-4A53-847C-9673C34EA847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C670BC8A-45EA-4A53-847C-9673C34EA847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6DF84C-E059-4884-ACD2-5463C5FEF8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6DF84C-E059-4884-ACD2-5463C5FEF8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6DF84C-E059-4884-ACD2-5463C5FEF8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6DF84C-E059-4884-ACD2-5463C5FEF8FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
