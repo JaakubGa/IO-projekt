@@ -38,7 +38,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxWybrane = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -93,18 +93,18 @@ namespace wypozyczalnia_produkcja.Pages
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // listBox1
+            // listBoxWybrane
             // 
-            this.listBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Name = "listBox1";
+            this.listBoxWybrane.FormattingEnabled = true;
+            resources.ApplyResources(this.listBoxWybrane, "listBoxWybrane");
+            this.listBoxWybrane.Name = "listBoxWybrane";
             // 
             // Koszyk
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxWybrane);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
@@ -130,6 +130,6 @@ namespace wypozyczalnia_produkcja.Pages
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxWybrane;
     }
 }
