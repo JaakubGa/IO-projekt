@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Zamowienie.cs" />
+    <Compile Include="Pages\MojeZamowienia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\MojeZamowienia.Designer.cs">
+      <DependentUpon>MojeZamowienia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Koszyk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\LogowanieFormularz.resx">
       <DependentUpon>LogowanieFormularz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MojeZamowienia.resx">
+      <DependentUpon>MojeZamowienia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProfilUzytkownika.resx">
       <DependentUpon>ProfilUzytkownika.cs</DependentUpon>

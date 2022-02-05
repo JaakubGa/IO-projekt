@@ -1,4 +1,5 @@
 ﻿using wypozyczalnia_produkcja.Models;
+using wypozyczalnia_produkcja.Params;
 
 //hubert
 namespace wypozyczalnia_produkcja.Pages
@@ -29,9 +30,9 @@ namespace wypozyczalnia_produkcja.Pages
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(/*int id*/)
+        private void InitializeComponent()
         {
-            Uzytkownik userOId1 = new Uzytkownik(2);
+            Uzytkownik user = new Uzytkownik(Singleton.GetInstance().IdZalogowanego);
 
             //elementy formularza
             this.imie = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.imie.Name = "imie";
             this.imie.Size = new System.Drawing.Size(180, 23);
             this.imie.TabIndex = 1;
-            this.imie.Text = userOId1.Imie;
+            this.imie.Text = user.Imie;
             // 
             // nazwisko
             // 
@@ -57,8 +58,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.nazwisko.Name = "nazwisko";
             this.nazwisko.Size = new System.Drawing.Size(180, 23);
             this.nazwisko.TabIndex = 2;
-            this.nazwisko.Text = userOId1.Nazwisko;
-            
+            this.nazwisko.Text = user.Nazwisko;
+
             // 
             // telefon
             // 
@@ -67,8 +68,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.telefon.Name = "telefon";
             this.telefon.Size = new System.Drawing.Size(180, 23);
             this.telefon.TabIndex = 3;
-            this.nazwisko.Text = userOId1.Telefon;
-            
+            this.nazwisko.Text = user.Telefon;
+
             // 
             // email
             // 
@@ -77,8 +78,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(180, 23);
             this.email.TabIndex = 4;
-            this.email.Text = userOId1.Email;
-            
+            this.email.Text = user.Email;
+
             // 
             // adres
             // 
@@ -87,11 +88,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.adres.Name = "adres";
             this.adres.Size = new System.Drawing.Size(180, 23);
             this.adres.TabIndex = 5;
-            if(userOId1.Adres != null)
-            {
-                this.adres.Text = userOId1.Adres.ToString();
-            }
-            
+            this.adres.Text = user.Adres.ToString();
+
             // 
             // ProfilUzytkownika
             // 

@@ -1,4 +1,7 @@
 ﻿
+using wypozyczalnia_produkcja.Models;
+using wypozyczalnia_produkcja.Params;
+
 namespace wypozyczalnia_produkcja.Pages
 {
     partial class Koszyk
@@ -118,10 +121,18 @@ namespace wypozyczalnia_produkcja.Pages
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            WyswietlListe();
         }
 
         #endregion
-
+        private void WyswietlListe()
+        {
+            foreach (var id in Singleton.GetInstance().ListaKoszyk)
+            {
+                Sprzet s = new Sprzet(id);
+                listBoxWybrane.Items.Add(s.ToString());
+            }
+        }
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;

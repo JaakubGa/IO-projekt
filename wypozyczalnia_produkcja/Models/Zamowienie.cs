@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Collections.Generic;
+using System.Data.SqlClient;
 using wypozyczalnia_produkcja.Params;
 
 //sabina
@@ -19,7 +20,7 @@ namespace wypozyczalnia_produkcja.Models
         {
             using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))
             {
-                SqlCommand command = new SqlCommand($"SELECT * FROM Adres WHERE id_adresu = {id}", Connection);
+                SqlCommand command = new SqlCommand($"SELECT * FROM Zamowienie WHERE id_zamowienia = {id}", Connection);
                 Connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -39,6 +40,11 @@ namespace wypozyczalnia_produkcja.Models
             }
             Uzytkownik = new Uzytkownik(IdUzytkownika);
             Sprzet = new Sprzet(IdSprzetu);
+        }
+        
+        public override string ToString()
+        {
+            return $"Nr: {Id} Data: {DataOd}-{DataDo} \nSprzet: {Sprzet.ToString()}";
         }
     }
 }

@@ -24,19 +24,22 @@ namespace wypozyczalnia_produkcja.Params
         public LogowanieFormularz Logowanie = new LogowanieFormularz();
         public Rejestracja Rejestracja = new Rejestracja();
         public bool ButtonsIsVisible;
+
+        private int _idZalogowanego;
         public int IdZalogowanego
         {
-            get => IdZalogowanego;
+            get { return _idZalogowanego; }
             set
             {
+                _idZalogowanego = value;
                 Wyszukiwarka.IsVisible();
             }
         }
 
-
-
+        //CTOR
         private Singleton() { }
 
+        //instancja
         private static Singleton _instance;
         public static Singleton GetInstance()
         {
@@ -46,8 +49,6 @@ namespace wypozyczalnia_produkcja.Params
             }
             return _instance;
         }
-
-
 
         public static void UzupelnijListeWyszukiwania(CheckedListBox listaKategori, bool wyszukajPoTekscie = true)
         {
@@ -116,6 +117,27 @@ namespace wypozyczalnia_produkcja.Params
                 reader.Close();
                 Connection.Close();
             }
+        }
+        public static List<int> ZwrocZamowienia()
+        {
+            List<int> lista = new List<int>();
+            using (SqlConnection Connection = new SqlConnection(Connect.StringConnection))
+            {
+                int id = Singleton.GetInstance().IdZalogowanego;
+                SqlCommand command = new SqlCommand($"SELECT * FROM Zamowienie WHERE id_uzytkownika = {id}", Connection);
+                Connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                //wpisanie danych z bazy
+                while (reader.Read())
+                {
+                    lista.Add((int)reader[0]);
+                }
+
+                reader.Close();
+                Connection.Close();
+            }
+            return lista;
         }
     }
 }

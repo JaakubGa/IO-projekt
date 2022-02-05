@@ -97,15 +97,18 @@ namespace wypozyczalnia_produkcja.Pages
             StronaPrzedmiotu stronaPrzedmiotu = new StronaPrzedmiotu(id);
             stronaPrzedmiotu.Show();
         }
-        /*
+
+        private void buttonZamowienia_Click(object sender, EventArgs e)
+        {
+            MojeZamowienia mojeZamowienia = new MojeZamowienia();
+            mojeZamowienia.Show();
+        }
+
         private void buttonKoszyk_Click(object sender, EventArgs e)
         {
-            foreach (int id in Singleton.GetInstance().KoszykLista)
-            {
-                Sprzet s = new Sprzet(id);
-                Koszyk.listBoxWybrane.Add(s.ToString());
-            }
+            Koszyk koszyk = new Koszyk();
+            koszyk.Show();
         }
-        */
+        
     }
 }
