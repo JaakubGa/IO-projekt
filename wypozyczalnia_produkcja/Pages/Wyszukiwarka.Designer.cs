@@ -68,7 +68,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonProfilUzytkownika.Text = "Profil Uzytkownika";
             this.buttonProfilUzytkownika.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonProfilUzytkownika.UseVisualStyleBackColor = true;
-            this.buttonProfilUzytkownika.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            this.buttonProfilUzytkownika.Visible = false;
             this.buttonProfilUzytkownika.Click += new System.EventHandler(this.buttonProfilUzytkownika_Click);
             // 
             // buttonLogowanie
@@ -105,7 +105,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonZamowienia.Text = "Moje zamówienia";
             this.buttonZamowienia.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonZamowienia.UseVisualStyleBackColor = true;
-           this.buttonZamowienia.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            this.buttonZamowienia.Visible = false;
+            this.buttonZamowienia.Click += new System.EventHandler(this.buttonZamowienia_Click);
             // 
             // buttonKoszyk
             // 
@@ -117,7 +118,8 @@ namespace wypozyczalnia_produkcja.Pages
             this.buttonKoszyk.Text = "Koszyk";
             this.buttonKoszyk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonKoszyk.UseVisualStyleBackColor = true;
-            this.buttonKoszyk.Visible = Singleton.GetInstance().ButtonsIsVisible;
+            this.buttonKoszyk.Visible = false;
+            this.buttonKoszyk.Click += new System.EventHandler(this.buttonKoszyk_Click);
             // 
             // listBoxWyszukiwanie
             // 
@@ -136,7 +138,7 @@ namespace wypozyczalnia_produkcja.Pages
             this.checkedListBoxKategorie.Location = new System.Drawing.Point(676, 78);
             this.checkedListBoxKategorie.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBoxKategorie.Name = "checkedListBoxKategorie";
-            this.checkedListBoxKategorie.Size = new System.Drawing.Size(152, 310);
+            this.checkedListBoxKategorie.Size = new System.Drawing.Size(152, 293);
             this.checkedListBoxKategorie.TabIndex = 9;
             this.checkedListBoxKategorie.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxKategorie_SelectedIndexChanged);
             // 

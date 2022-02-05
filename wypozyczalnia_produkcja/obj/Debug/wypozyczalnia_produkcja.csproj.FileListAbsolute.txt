@@ -25,6 +25,7 @@ C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozy
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
 C:\Users\Hubert\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources
+<<<<<<< HEAD
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe.config
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.pdb
@@ -42,3 +43,9 @@ D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CopyComplete
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.exe
 D:\Studia\Inzynieria Oprogramowania\IOGIT\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.pdb
+=======
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Koszyk.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
+D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.MojeZamowienia.resources
+>>>>>>> 629c5ffdbdca2d2205d79233e63e98373992cfbf
