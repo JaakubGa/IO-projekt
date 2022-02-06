@@ -49,3 +49,22 @@ D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia
 D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
 D:\Studia\IO\Repo wypożyczalnia\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.MojeZamowienia.resources
 >>>>>>> 629c5ffdbdca2d2205d79233e63e98373992cfbf
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe.config
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.exe
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\wypozyczalnia_produkcja.pdb
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\nunit.framework.dll
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\bin\Debug\nunit.framework.xml
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.AssemblyReference.cache
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Koszyk.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.LogowanieFormularz.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.MojeZamowienia.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.ProfilUzytkownika.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia.DSanak.Rejestracja.Rejestracja.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Properties.Resources.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.StronaPrzedmiotu.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.Pages.Wyszukiwarka.resources
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.GenerateResource.cache
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CoreCompileInputs.cache
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.csproj.CopyComplete
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.exe
+C:\Users\vsaba\source\repos\IO-projekt\wypozyczalnia_produkcja\obj\Debug\wypozyczalnia_produkcja.pdb
