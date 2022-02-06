@@ -26,7 +26,7 @@ namespace wypozyczalnia.DSanak.Rejestracja
 
                 DataTable dtc = new DataTable();
 
-                String czyDuplikat = "select Count(*) from Uzytkownik where nick= '" + login_txt.Text + "' and haslo= '" + password_txt.Text + "'";
+                String czyDuplikat = "select Count(*) from Uzytkownik where nick= '" + login_txt.Text + "' or e_mail = '"+email_txt.Text +"'";// and haslo= '" + password_txt.Text + "'";
                 String dodawanie = "INSERT INTO Uzytkownik(nick,haslo,imie,nazwisko,e_mail) " +
                     "VALUES ('" + login_txt.Text + "', '" + password_txt.Text + "', '" + firstname_txt.Text + "', '" + lastname_txt.Text + "','" + email_txt.Text + "')";
 
@@ -35,10 +35,7 @@ namespace wypozyczalnia.DSanak.Rejestracja
                 SqlCommand kwerenda1 = new SqlCommand(dodawanie, con);
                 SqlCommand kwerenda2 = new SqlCommand(dodawanie_adresu, con);
 
-                SqlDataAdapter sda = new SqlDataAdapter(czyDuplikat, con)
-                {
-
-                };
+                SqlDataAdapter sda = new SqlDataAdapter(czyDuplikat, con);
                 sda.Fill(dtc);
                 if (dtc.Rows[0][0].ToString() == "0")
                 {
@@ -47,7 +44,9 @@ namespace wypozyczalnia.DSanak.Rejestracja
 
                         try
                         {
+
                             DataTable dt = new DataTable();
+
                             SqlDataAdapter da = new SqlDataAdapter(kwerenda1);
                             da.Fill(dt);
                             DataTable dt1 = new DataTable();
@@ -58,9 +57,8 @@ namespace wypozyczalnia.DSanak.Rejestracja
                         }
                         catch (Exception eax)
                         {
-                            MessageBox.Show($"Error {eax}");
+                            MessageBox.Show("Niepoprawne dane ",eax.ToString());
                         }
-
 
                     }
                     else
@@ -72,6 +70,11 @@ namespace wypozyczalnia.DSanak.Rejestracja
 
 
                 }
+                else if (dtc.Rows[0][0].ToString() != "0")
+                {
+                    MessageBox.Show("Podane dane już istnieją w bazie danych");
+                }
+
 
 
 
