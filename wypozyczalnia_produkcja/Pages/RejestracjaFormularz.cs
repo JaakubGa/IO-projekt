@@ -31,7 +31,7 @@ namespace wypozyczalnia.DSanak.Rejestracja
                     "VALUES ('" + login_txt.Text + "', '" + password_txt.Text + "', '" + firstname_txt.Text + "', '" + lastname_txt.Text + "','" + email_txt.Text + "')";
 
                 string dodawanie_adresu = "INSERT INTO Adres(miasto,kod_pocztowy,ulica,numer_domu,numer_mieszkania) " +
-                    "Values ('" + city_txt.Text + "','" + post_code_txt.Text + "','" + street_txt.Text + "','" + number_txt.Text + "',,'" + number_of_apart_txt.Text + "')";
+                    "Values ('" + city_txt.Text + "','" + post_code_txt.Text + "','" + street_txt.Text + "','" + number_txt.Text + "','" + number_of_apart_txt.Text + "')";
                 SqlCommand kwerenda1 = new SqlCommand(dodawanie, con);
                 SqlCommand kwerenda2 = new SqlCommand(dodawanie_adresu, con);
 
@@ -51,13 +51,13 @@ namespace wypozyczalnia.DSanak.Rejestracja
                             da.Fill(dt);
                             DataTable dt1 = new DataTable();
                             SqlDataAdapter da1 = new SqlDataAdapter(kwerenda2);
-                            da.Fill(dt1);
+                            da1.Fill(dt1);
                             MessageBox.Show("Dodano nowe twarze!");
 
                         }
                         catch (Exception eax)
                         {
-                            MessageBox.Show("Niepoprawne dane ",eax.ToString());
+                            MessageBox.Show($"Error:{eax.ToString()}");
                         }
 
                     }
